@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Facts about Asian American</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+		<script src="jquery-1.6.1.js"></script>
+		<script src="my_jquery.js"></script>
+	</head>
+
+	<body>
+		<!-- Header -->
+		<section id="header">
+			<div class="header container">
+				<div class="nav-bar">
+					<div class="logo">
+						<a href="#hero"><h3>FactsforAsian</h3></a>
+					</div>
+					
+					<div class="nav-list">
+						<ul>
+							<li><a href="#who">Who</a></li>
+							<li><a href="#location">Where</a></li>
+							<li><a href="#edu">Income</a></li>
+		        			<li><a href="#relation" id="last-nav-item">Relationship</a></li>
+		        		</ul>
+		        	</div>
+		        </div>
+		    </div>
+		</section>
+
+		<!-- Hero section -->
+		<section id="hero">
+			<div class="hero container">
+				<div>
+					<h1>What We Talk About When We Talk About</h1> <h1-v> Asian American</h1-v>
+					<br>
+					<a href="#" type="button" class="cta">Start</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- who they are -->
+		<section id="who">
+			<div class="who-container">
+				<div>
+					<h2>01      Who are they?</h2>
+					<!-- <img src="img/who.png" alt="" id="vizforwho"> -->
+					<div id="outer-circle"> </div>
+						<div id="eastasian">
+							<img src="img/eastasian.png" class="image">
+							<h6> East Asian American </h6>
+						</div>
+						<div id="southasian">
+							<img src="img/southasian.png" class="image">
+							<h6> South Asian American </h6>
+						</div>
+						<div id="southeast">
+							<img src="img/southeast.png" class="image">
+							<h6> Southeast Asian American </h6>
+						</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- demographics -->
+		<section id="location">
+			<div class="location-container">
+				<div>
+					<br><br>
+					<h2-v>02      Where are they located in?</h2-v>
+					<h4> Hover on the name of origin to see details </h4>
+					<br>
+					<div id="observablehq-1dd6002a"></div>
+					<script type="module">
+					import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+					import define from "https://api.observablehq.com/@yunjieyao/asian-american-state-choropleth.js?v=3";
+					const inspect = Inspector.into("#observablehq-1dd6002a");
+					(new Runtime).module(define, name => (name === "chart") && inspect());
+					</script>
+					<br>
+					<br>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- education and income level -->
+		<section id="edu">
+			<div class="edu-container">
+				<div>
+					<!-- <h2-v>04      What's their education level?</h2-v> 
+					<br>-->
+					<!--<p>Percentage of U.S. Asians with Higher Education</p>
+					<h4>% of those ages 25 and older with a bachelor’s degree or more, by oringin group, 2015</h4>
+					<img src="img/edu.png" alt="" id="vizforedu">-->
+					<!-- <br>
+					<br>-->
+					<br>
+					<h2-v>03      What's their income level?</h2-v>
+					<img src="img/income.png" alt="" id="vizforincome"> 
+					<p> Income inequality is rising more rapidly among Asian Americans than other racial or ethnic groups, reflecting wide disparities in income among Asian origin groups. </p>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Their relatinoship -->
+		<section id="relation">
+			<div class="relation-container">
+				<div>
+					<h2-v>04      Their relationship</h2-v>
+					<div id="observablehq-d4003648"></div>
+					<script type="module">
+					import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+					import define from "https://api.observablehq.com/@yunjieyao/assignment-animation-with-d3.js?v=3";
+					const inspect = Inspector.into("#observablehq-d4003648");
+					(new Runtime).module(define, name => (name === "chart") && inspect());
+					</script>
+				</div>
+			</div>
+		</section>
+
+        <!-- history 
+        <section id="history">
+        	<div class="history-container">
+        		<div>
+		        	<h2> 03      The immigration history </h2>
+		        	 <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+		        		<div class="image1"></div>
+		        		<div class="image2"></div>
+						<div class="image3"></div>
+					</div> 
+				</div>
+			</div>
+        </section> -->
+
+	
+
+		<!-- Footer -->
+			<footer class = "footer">
+				<div>
+					<h5> Visualization credit to Yankai Huang and Ryan Liu. 
+					<h5> Image credit to https://www.newyorker.com/books/under-review/the-stories-we-tell-and-dont-tell-about-asian-american-lives. </h5>
+					<h5> Website coded and designed by Yunjie Yao. </h5> 
+				</div>
+			</footer>
+	</body>
+</html>
