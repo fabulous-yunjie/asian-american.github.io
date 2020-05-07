@@ -23,11 +23,12 @@ body {
 }
 
 p {
-    color: #EEEEEE;
+    color: #C9C9C9;
     font-size: 16px;
     font-weight: 400px;
-    max-width: 700px;
+    max-width: 600px;
     padding-bottom: 5px;
+    line-height: 28px;
     margin-left: auto;
     margin-right: auto;
     position: center;
@@ -180,15 +181,15 @@ h6{
     margin-left: 10px;
 }
 
-#nav-long-item {
+/*#nav-long-item {
     width: 250px;
     padding-left: 15px;
-}
+}*/
 
 #last-nav-item {
     width: 150px;
     padding-left: 15px;
-}
+} 
 
 
 .nav-list a {
@@ -303,6 +304,16 @@ h6{
 
 }
 
+#vizforquality{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-bottom: 60px;
+
+}
+
 #outer-circle {
    border: 1px;
    background-color: #BDBDBD;
@@ -338,6 +349,23 @@ h6{
    left: 55%;
    z-index: 2;
 }
+
+/* for slope graph */
+#slopegraph {
+  min-height: 400px;
+  padding: 20px 0;
+}
+footer {
+  position: relative;
+}
+.l-labels, .r-labels {
+  font-size: 11px;
+}
+text.s-title {
+  fill: #130C0E;
+  letter-spacing: 2px;
+}
+
 
 
 

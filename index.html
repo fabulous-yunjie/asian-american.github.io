@@ -7,6 +7,8 @@
 		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 		<script src="jquery-1.6.1.js"></script>
 		<script src="my_jquery.js"></script>
+		<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+		<script src="d3_code_slopegraph.js"></script>
 	</head>
 
 	<body>
@@ -22,7 +24,8 @@
 						<ul>
 							<li><a href="#who">Who</a></li>
 							<li><a href="#location">Where</a></li>
-							<li><a href="#edu" id="nav-long-item">Education and Income</a></li>
+							<li><a href="#edu" id="nav-long-item">Income</a></li>
+							<li><a href="#pophistory" id="last-nav-item">Population</a></li>
 		        			
 		        			<!--<li><a href="#relation" id="last-nav-item">Relationship</a></li>-->
 		        		</ul>
@@ -47,7 +50,7 @@
 					<h2-v>01      Who are they?</h2-v>
 					<h4> Do you know each May is the Asian Pacific Heritage Month?</h4>
 					<h4>We often heard of Asian American and Asian people – but who are they?</h4>
-					<h4>Here is a definition of Asian American from Wikipedia.</h4>
+					<!--<h4>Here is a definition of Asian American from Wikipedia.</h4>-->
 
 					<div id="observablehq-174830da"></div>
 					<script type="module">
@@ -108,29 +111,25 @@
 					<!-- <br>
 					<br>-->
 					<br>
-					<h2-v>03      What's their income level?</h2-v>
+					<h2-v>03      What's their income level? </h2-v>
 					<img src="img/income.png" alt="" id="vizforincome"> 
-					<p> Income inequality is rising more rapidly among Asian Americans than other racial or ethnic groups, reflecting wide disparities in income among Asian origin groups. </p>
+
+					<p> Most U.S. Asian origin groups have household incomes that call below those of Asian Americans overall. Income inequality is rising more rapidly among Asian Americans than other racial or ethnic groups, reflecting wide disparities in income among Asian origin groups. </p>
+					
 				</div>
 			</div>
 		</section>
 
-
-		<!-- Their relatinoship 
-		<section id="relation">
-			<div class="relation-container">
+		<!-- Population history -->
+		<section id="pophistory">
+			<div class="pophistory-container">
 				<div>
-					<h2-v>04      Their relationship</h2-v>
-					<div id="observablehq-d4003648"></div>
-					<script type="module">
-					import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-					import define from "https://api.observablehq.com/@yunjieyao/assignment-animation-with-d3.js?v=3";
-					const inspect = Inspector.into("#observablehq-d4003648");
-					(new Runtime).module(define, name => (name === "chart") && inspect());
-					</script>
+					<h2-v>04      How do their population change over time?</h2-v>
+					<br>
 				</div>
 			</div>
-		</section>-->
+		</section>
+		
 
         <!-- History 
         <section id="history">
@@ -149,9 +148,9 @@
 		<!-- Footer -->
 			<footer class = "footer">
 				<div>
-					<h5> Visualization credit to Yankai Huang and Ryan Liu. 
+					<h5> Visualization created by Ryan Liu, Yankai Huang and Yunjie Yao. </h5>
 					<h5> Image credit to https://www.newyorker.com/books/under-review/the-stories-we-tell-and-dont-tell-about-asian-american-lives. </h5>
-					<h5> Website coded and designed by Yunjie Yao. </h5> 
+					<!--<h5> Website coded and designed by Yunjie Yao. </h5> -->
 				</div>
 			</footer>
 	</body>
