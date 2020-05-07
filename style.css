@@ -312,10 +312,13 @@ h6{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 40px;
     padding-bottom: 50px;
-
+    padding-left: 30px;
+    max-height: 1300px;
+    max-width: 1300px;
 }
+
+
 
 #vizforquality{
     display: block;
