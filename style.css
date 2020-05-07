@@ -23,7 +23,7 @@ body {
 }
 
 p {
-    color: #ffffff;
+    color: #EEEEEE;
     font-size: 16px;
     font-weight: 400px;
     max-width: 700px;
@@ -33,6 +33,18 @@ p {
     position: center;
     text-align: center;
     margin-top: -35px;
+}
+
+p-v{
+    color: #EEEEEE;
+    font-size: 16px;
+    font-weight: 400px;
+    max-width: 600px;
+    padding-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    position: center;
+    text-align: center;
 }
 
 h1 {
@@ -73,6 +85,7 @@ h2-v {
     display: block;
     text-align: center;
     justify-content: center;
+    padding-bottom: 25px;
 }
 
 h3 {
@@ -84,9 +97,12 @@ h4 {
     font-size: 16px;
     color: #333333;
     font-weight: lighter;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    max-width: 600px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    transform: translate(70%, -50%);
     text-align: center;
+    justify-content: center;
 }
 
 h5 {
@@ -109,6 +125,8 @@ h6{
     padding-left: 65px;
 
 }
+
+
 
 .footer {
     display: block;
@@ -160,6 +178,11 @@ h6{
     font-weight: regular;
     float: left;
     margin-left: 10px;
+}
+
+#nav-long-item {
+    width: 250px;
+    padding-left: 15px;
 }
 
 #last-nav-item {
@@ -217,10 +240,19 @@ h6{
 }
 
 #who {
-    background-color: #1B1D36;
+    padding-top: 50px;
+    background-color: #F9E7E6;
     justify-content: center;
     align-content: center;
-    max-height: 950px;
+    max-height: 1000px;
+    padding-bottom: 30px;
+}
+
+#location {
+    justify-content: center;
+    align-content: center;
+    max-height: 1000px;
+    padding-bottom: 15px;
 }
 
 .who-container {
@@ -354,13 +386,17 @@ h6{
   color: white;
 }
 
-#observablehq-1dd6002a{
+#observablehq-2a621b2f{
     padding-left: 100px;
     padding-right: 150px;
 }
 
-
-
+#observablehq-174830da{
+    padding-left: 350px;
+    padding-right: 350px;
+    padding-bottom: 30px;
+    padding-top: 5px;
+}
 
 @media (min-width: 1200px)
 .container {

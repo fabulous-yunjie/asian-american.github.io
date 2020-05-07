@@ -10,7 +10,7 @@
 	</head>
 
 	<body>
-		<!-- Header -->
+		<!-- Header  -->
 		<section id="header">
 			<div class="header container">
 				<div class="nav-bar">
@@ -22,8 +22,9 @@
 						<ul>
 							<li><a href="#who">Who</a></li>
 							<li><a href="#location">Where</a></li>
-							<li><a href="#edu">Income</a></li>
-		        			<li><a href="#relation" id="last-nav-item">Relationship</a></li>
+							<li><a href="#edu" id="nav-long-item">Education and Income</a></li>
+		        			
+		        			<!--<li><a href="#relation" id="last-nav-item">Relationship</a></li>-->
 		        		</ul>
 		        	</div>
 		        </div>
@@ -39,12 +40,24 @@
 			</div>
 		</section>
 
-		<!-- who they are -->
+		<!-- Who they are -->
 		<section id="who">
 			<div class="who-container">
 				<div>
-					<h2>01      Who are they?</h2>
-					<!-- <img src="img/who.png" alt="" id="vizforwho"> -->
+					<h2-v>01      Who are they?</h2-v>
+					<h4> Do you know each May is the Asian Pacific Heritage Month?</h4>
+					<h4>We often heard of Asian American and Asian people – but who are they?</h4>
+					<h4>Here is a definition of Asian American from Wikipedia.</h4>
+
+					<div id="observablehq-174830da"></div>
+					<script type="module">
+					import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+					import define from "https://api.observablehq.com/@yanksc/asian-american-zoomable-sunburst.js?v=3";
+					const inspect = Inspector.into("#observablehq-174830da");
+					(new Runtime).module(define, name => (name === "chart") && inspect());
+					</script>
+					
+					<!-- <img src="img/who.png" alt="" id="vizforwho"> 
 					<div id="outer-circle"> </div>
 						<div id="eastasian">
 							<img src="img/eastasian.png" class="image">
@@ -57,34 +70,33 @@
 						<div id="southeast">
 							<img src="img/southeast.png" class="image">
 							<h6> Southeast Asian American </h6>
-						</div>
+						</div>-->
 				</div>
 			</div>
 		</section>
 
-		<!-- demographics -->
+		<!-- Demographics -->
 		<section id="location">
 			<div class="location-container">
 				<div>
 					<br><br>
 					<h2-v>02      Where are they located in?</h2-v>
-					<h4> Hover on the name of origin to see details </h4>
+					<h4> Hover on the name of origin to see detailed distribution </h4>
 					<br>
-					<div id="observablehq-1dd6002a"></div>
+					<div id="observablehq-2a621b2f"></div>
 					<script type="module">
 					import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-					import define from "https://api.observablehq.com/@yunjieyao/asian-american-state-choropleth.js?v=3";
-					const inspect = Inspector.into("#observablehq-1dd6002a");
+					import define from "https://api.observablehq.com/@yanksc/state-choropleth.js?v=3";
+					const inspect = Inspector.into("#observablehq-2a621b2f");
 					(new Runtime).module(define, name => (name === "chart") && inspect());
 					</script>
-					<br>
 					<br>
 				</div>
 			</div>
 		</section>
 
 
-		<!-- education and income level -->
+		<!-- Education and income level -->
 		<section id="edu">
 			<div class="edu-container">
 				<div>
@@ -104,7 +116,7 @@
 		</section>
 
 
-		<!-- Their relatinoship -->
+		<!-- Their relatinoship 
 		<section id="relation">
 			<div class="relation-container">
 				<div>
@@ -118,9 +130,9 @@
 					</script>
 				</div>
 			</div>
-		</section>
+		</section>-->
 
-        <!-- history 
+        <!-- History 
         <section id="history">
         	<div class="history-container">
         		<div>
