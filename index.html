@@ -129,11 +129,19 @@
 					<h2-v>04      How does their population change over time?</h2-v>
 					<br>
 					<section id="barchartrace">
-						<div id="observablehq-ff760670"></div>
+						<div id="observablehq-b85c9977"></div>
 						<script type="module">
 						import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
 						import define from "https://api.observablehq.com/@yunjieyao/bar-chart-race.js?v=3";
-						const inspect = Inspector.into("#observablehq-ff760670");
+						const inspect = Inspector.into("#observablehq-b85c9977");
+						(new Runtime).module(define, name => (name === "viewof keyframe") && inspect());
+						</script>
+						
+						<div id="observablehq-058aceeb"></div>
+						<script type="module">
+						import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+						import define from "https://api.observablehq.com/@yunjieyao/bar-chart-race.js?v=3";
+						const inspect = Inspector.into("#observablehq-058aceeb");
 						(new Runtime).module(define, name => (name === "chart") && inspect());
 						</script>
 					</section>
