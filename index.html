@@ -122,15 +122,24 @@
 			</div>
 		</section>
 
-		<!-- Population history 
+		<!-- Population history-->
 		<section id="pophistory">
 			<div class="pophistory-container">
 				<div>
-					<h2-v>04      How do their population change over time?</h2-v>
+					<h2-v>04      How does their population change over time?</h2-v>
 					<br>
+					<section id="barchartrace">
+						<div id="observablehq-ff760670"></div>
+						<script type="module">
+						import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+						import define from "https://api.observablehq.com/@yunjieyao/bar-chart-race.js?v=3";
+						const inspect = Inspector.into("#observablehq-ff760670");
+						(new Runtime).module(define, name => (name === "chart") && inspect());
+						</script>
+					</section>
 				</div>
 			</div>
-		</section>-->
+		</section>
 		
 
         <!-- History 

@@ -249,6 +249,16 @@ h6{
     padding-bottom: 30px;
 }
 
+#pophistory{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#barchartrace{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
 #final{
     padding-top: 50px;
     background-color: #FFF9EE;
