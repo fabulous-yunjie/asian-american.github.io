@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 html{
@@ -16,18 +16,18 @@ a{
 /* from Interactive and reusable d3.treemap */
 /* http://bl.ocks.org/annaghi/5d24b37ebe077d4e919f */
 
-  #vis {
-    width: 960px;
-    height: 500px; 
-    position: center;}
+#vis {
+width: 960px;
+height: 500px; 
+position: center;}
 
-  .cell text {
-    cursor: move;
-    font: 10px sans-serif;
-    text-anchor: middle; }
+.cell text {
+cursor: move;
+font: 10px sans-serif;
+text-anchor: middle; }
 
-  .cell rect {  
-    stroke: #fff; }
+.cell rect {  
+stroke: #fff; }
 /* end of interactive and reusable d3.treemap */
 
 body {
@@ -37,13 +37,14 @@ body {
     color: #212529;
     text-align: left;
     background-color: #FBF3E1;
+    font-family: 'Poppins', sans-serif;
 }
 
 p {
     color: #C9C9C9;
     font-size: 16px;
     font-weight: 400px;
-    max-width: 600px;
+    max-width: 1000px;
     padding-bottom: 5px;
     line-height: 28px;
     margin-left: auto;
@@ -57,7 +58,7 @@ p-v{
     color: #EEEEEE;
     font-size: 16px;
     font-weight: 400px;
-    max-width: 600px;
+    max-width: 1000px;
     padding-bottom: 5px;
     margin-left: auto;
     margin-right: auto;
@@ -66,8 +67,8 @@ p-v{
 }
 
 h1 {
-    font-size: 70px;
-    line-height: 100px;
+    font-size: 4vw;
+    /* line-height: 100px; */
     font-weight: bold;
     color: #002949;
     max-width: 450px;
@@ -76,12 +77,12 @@ h1 {
 }
 
 h1-v {
-    font-size: 90px;
-    line-height: 100px;
+    font-size: 4vw;
+    /* line-height: 100px; */
     font-weight: bold;
     color: #CA8851;
-    max-width: 530px;
-    padding-bottom: 15px;
+    max-width: 700px;
+    /* padding-bottom: 15px; */
     position: left;
 }
 
@@ -135,7 +136,7 @@ h5 {
     font-weight: lighter;
     padding-top:5px;
     padding-bottom: 5px;
-    max-width: 1000px;
+    /* max-width: 1000px; */
     text-align: center;
     position: center;
     align-content: center;
@@ -159,28 +160,41 @@ h6{
     margin-left: 200px;
 }
 
+
 #header {
     left: 0;
     top: 0;
     width: 100vw;
     height: auto;
-    padding-top: 20px;
+    padding-top: 5vh;
+    background-color: #FBF3E1;
+    font-family: 'Poppins', sans-serif;
 }
+
 
 #header .header {
+    margin: 1vw 10vw;
     min-height: 8vh;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
+}
+#logo {
+    margin: 0vw 10vw;
 }
 
-
+.header-container {
+    position: relative;
+    display: block;
+    margin: 0 0 2vw 10vw;
+    font-weight: 800;
+} 
 #header .nav-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    max-width: 1300px;
-    padding: 0 10px;
+    /* max-width: 1000px; */
+    /* padding: auto; */
 }
 
 
@@ -188,8 +202,8 @@ h6{
     list-style: none;
     text-align: center;
     margin: 10px;
-    width: 900px;
-    padding-left: 160px;
+    width: 800px;
+    /* padding-left: 160px; */
 }
 
 .nav-list li {
@@ -213,13 +227,13 @@ h6{
 
 
 .nav-list a {
-    font-size: 18px;
-    font-weight: 30px;
-    text-decoration: none;
-    color: #333333;
-    padding: 10px;
+    /* font-size: 18px;
+    font-weight: 30px; */
+    /* text-decoration: none; */
+    color:grey;
     display: block;
     padding: 3px;
+    margin: 0 0 0 10vw;
 }
 
 .container {
@@ -227,16 +241,34 @@ h6{
     width: 100%;
     display: flex;
     align-items: left;
-    padding-left: 130px;
+    padding-left: 10px;
 }
+
+.hero-container {
+    position: relative;
+    display: block;
+    margin: 0 0 0 10vw;
+    /* position: absolute; */
+    min-height: 88vh;
+} 
 
 #hero {
     background-image: url(img/bg.jpg);
     background-size: cover;
     background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+
+}
+#race_bar {
+
+    background-size: cover;
+    background-position: top;
     position: relative;
 }
-
 #hero .cta {
     display: inline-block;
     padding: 10px 40px;
@@ -249,7 +281,7 @@ h6{
     border-radius: 10px;
     text-transform: uppercase;
     margin-top: 25px;
-    transition: 5s ease background-color;
+
 }
 
 
@@ -303,7 +335,7 @@ h6{
 #location {
     justify-content: center;
     align-content: center;
-    max-height: 1000px;
+    min-height: 1000px;
     padding-bottom: 15px;
 }
 
@@ -352,10 +384,14 @@ h6{
     padding-bottom: 50px;
     padding-left: 30px;
     max-height: 1300px;
-    max-width: 1300px;
+    max-width: 1000px;
 }
 
+#viz1589222417783{
 
+    margin-left: auto;
+    margin-right: auto;
+}
 
 #vizforquality{
     display: block;
@@ -468,12 +504,11 @@ text.s-title {
 }
 
 #observablehq-2a621b2f{
-    padding-left: 100px;
-    padding-right: 150px;
+    
     height: 500px;
-    width: 50%;
+    width: 40%;
     position: center;
-    margin: 0 auto;
+    margin: 0 30vw;
 }
 
 #observablehq-174830da{
@@ -486,9 +521,17 @@ text.s-title {
 #treemap{
     /* padding-left: 250px;
     padding-right: 250px; */
-    margin: 0 auto;
+    margin: 0 20vw;
     position: center;
     /* left: 30%; */
+}
+
+#race_bar{
+    background: white;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 30px;
+    padding-top: 100px; 
 }
 
 #incomeinequality{
@@ -501,7 +544,7 @@ text.s-title {
 
 @media (min-width: 1200px)
 .container {
-    max-width: 1140px;
+    max-width: 1110px;
 }
 
 

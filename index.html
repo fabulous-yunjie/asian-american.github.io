@@ -2,30 +2,32 @@
 <html>
 	<head>
 		<title>Facts about Asian American</title>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		
+		
 		<script src="script.js"></script>
 		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 		<script src="jquery-1.6.1.js"></script>
 		<script src="my_jquery.js"></script>
 		<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 		<script src="d3_code_slopegraph.js"></script>
-		<meta name="viewport" content="width=device-width, initial-scale=1">>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 		
 		<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
     <script src="https://rawgit.com/misoproject/d3.chart/master/d3.chart.min.js"></script>
     <script src="https://rawgit.com/annaghi/d3.chart.layout.hierarchy/master/d3.chart.layout.hierarchy.js"></script>
-
+	<link rel="stylesheet" href="style.css">
 		
-		<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+		
 <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>	 -->
 <script>
 		(function() {
 		//   d3.json("new_flare.json", function(error, json) {
-			// d3.json("new_flare.json").then(function(data){ 
-			d3.json("https://rawgit.com/annaghi/d3.chart.layout.hierarchy/master/example/data/flare.json", function(error, json) {
+			d3.json("new_flare.json").then(function(data){ 
+			// d3.json("https://rawgit.com/annaghi/d3.chart.layout.hierarchy/master/example/data/flare.json", function(error, json) {
 
 			var treemap = d3.select("#vis").append("svg")
   
@@ -49,10 +51,10 @@
 	<body>
 		<!-- Header  -->
 		<section id="header">
-			<div class="header container">
+			<div class="header-container">
 				<div class="nav-bar">
 					<div class="logo">
-						<a href="#hero"><h3>FactsforAsian</h3></a>
+						<a href="#hero"><h3>FactsAboutAsian</h3></a>
 					</div>
 					
 					<div class="nav-list">
@@ -71,10 +73,12 @@
 
 		<!-- Headline/Introction  -->
 		<section id="hero">
-			<div class="hero container">
-				<div>
-					<h1>What We Talk About When We Talk About</h1>
-					<h1-v> Asian American</h1-v>
+			<div class="hero-container">
+				<div class="row">
+					<div class="col">
+						<h1>What We Talk About When We Talk About</h1>
+						<h1-v> Asian American</h1-v>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -102,18 +106,7 @@
 		<!-- Demographics -->
 		<section id="who2">
 		<div id="vis"></div>
-
-
-
-
-
 		</section>
-
-
-
-
-
-
 
 
 
@@ -126,6 +119,10 @@
 					<h2-v>02      Where are they located in the U.S.?</h2-v>
 					<h4> Hover on the name of origin to see detailed distribution </h4>
 					<br>
+
+					<div class='tableauPlaceholder' id='viz1589222417783' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ye&#47;YearGeoRace_15892223350380&#47;YearGeoRace_Avg&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='YearGeoRace_15892223350380&#47;YearGeoRace_Avg' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ye&#47;YearGeoRace_15892223350380&#47;YearGeoRace_Avg&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1589222417783');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else { vizElement.style.width='100%';vizElement.style.height='1027px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+					
+
 					<div id="observablehq-2a621b2f"></div>
 					<script type="module">
 					import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
@@ -169,14 +166,33 @@
 				</div>
 			</div>
 		</section>
-<div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/1834503" data-url="https://flo.uri.sh/visualisation/1834503/embed"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+		<section id="race_bar">
+			<div class="container">
+				<div class="row">
+					<div class="col-4">
+						<h2-v>05      
+						<br>The population of different ethnicity in Asian American has been changed over time. </h2-v>
+					</div>
+					<div class="col">
+						<div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/1834503" data-url="https://flo.uri.sh/visualisation/1834503/embed">
+							<script src="https://public.flourish.studio/resources/embed.js"></script>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>	
+		
+		
+
 		<!-- Population history-->
 		<section id="pophistory">
 			<div class="pophistory-container">
+				
 				<div>
-					<h2-v>04      How does their population change over time?</h2-v>
+					<h2-v>06 How does their population change over time?</h2-v>
 					<br>
-					<section id="barchartrace">
+					<!-- <section id="barchartrace">
 						<div id="observablehq-b85c9977"></div>
 						<script type="module">
 						import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
@@ -192,9 +208,9 @@
 						const inspect = Inspector.into("#observablehq-058aceeb");
 						(new Runtime).module(define, name => (name === "chart") && inspect());
 						</script>
-					</section>
+					</section> -->
 				</div>
-			</div>
+			</div> 
 		</section>
 		
 
@@ -217,7 +233,7 @@
 			<div class="final-container">
 				<div>
 					<h2-v>Finally...</h2-v>
-					<img src="img/finally.png" alt="" id="vizforfinal"> 
+					<img src="img/mahjong-parlor-floral-decorations.jpg" alt="" id="vizforfinal"> 
 					<h4> “No group can be generalized. We are not arguing that Asian people are the only minority, but this group has lacked close look for a long time” </h4>
 					<br>
 					<h4> - that’s why we created this website to help you know more about this gourp. We hope you enjoy reading this site :) </h4>
