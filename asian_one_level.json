@@ -1,0 +1,92 @@
+{
+      "name": "Asian in America",
+      "children": [
+        {
+          "name": "Eastern Asian",
+          "children": [
+            {
+              "name": "Chinese",
+              "size": 4020
+            },
+            {
+              "name": "Taiwanese",
+              "size": 219
+            },
+            {
+              "name": "Japanese",
+              "size": 1307
+            },
+            {
+              "name": "Korean",
+              "size": 1713
+            }
+          ]
+        },
+        {
+          "name": "South Central Asian",
+          "children": [
+            {
+              "name": "Indian",
+              "size": 3187
+            },
+            {
+              "name": "Pakistani",
+              "size": 421
+            },
+            {
+              "name": "Bangladeshi",
+              "size": 156
+            },
+            {
+              "name": "Nepali",
+              "size": 300
+            },
+            {
+              "name": "Sri Lankan",
+              "size": 60
+            }
+          ]
+        },
+        {
+          "name": "South Eastern Asian",
+          "children": [
+            {
+              "name": "Filipino",
+              "size": 3479
+            },
+            {
+              "name": "Indonesian",
+              "size": 113
+            },
+            {
+              "name": "Malaysian",
+              "size": 24
+            },
+            {
+              "name": "Cambodian",
+              "size": 281
+            },
+            {
+              "name": "Hmong",
+              "size": 278
+            },
+            {
+              "name": "Laotian",
+              "size": 231
+            },
+            {
+              "name": "Thai",
+              "size": 201
+            },
+            {
+              "name": "Burmese",
+              "size": 105
+            },
+            {
+              "name": "Singaporean",
+              "size": 5
+            }
+          ]
+        }
+      ]
+}

@@ -9,7 +9,42 @@
 		<script src="my_jquery.js"></script>
 		<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 		<script src="d3_code_slopegraph.js"></script>
-	</head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">>
+		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+		
+		<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="https://rawgit.com/misoproject/d3.chart/master/d3.chart.min.js"></script>
+    <script src="https://rawgit.com/annaghi/d3.chart.layout.hierarchy/master/d3.chart.layout.hierarchy.js"></script>
+
+		
+		<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>	 -->
+<script>
+		(function() {
+		//   d3.json("new_flare.json", function(error, json) {
+			// d3.json("new_flare.json").then(function(data){ 
+			d3.json("https://rawgit.com/annaghi/d3.chart.layout.hierarchy/master/example/data/flare.json", function(error, json) {
+
+			var treemap = d3.select("#vis").append("svg")
+  
+			  .chart("treemap")
+  
+				.value("size")
+				.sortable("_DESC_")
+				//.zoomable()
+				.collapsible()
+				//.duration()
+				//.colors(['#FF0000', '#00FF00', '#0000FF'])
+				;
+  
+			treemap.draw(json);
+  
+		  });
+		}());
+	  </script>
+</head>
 
 	<body>
 		<!-- Header  -->
@@ -38,7 +73,8 @@
 		<section id="hero">
 			<div class="hero container">
 				<div>
-					<h1>What We Talk About When We Talk About</h1> <h1-v> Asian American</h1-v>
+					<h1>What We Talk About When We Talk About</h1>
+					<h1-v> Asian American</h1-v>
 				</div>
 			</div>
 		</section>
@@ -50,36 +86,37 @@
 					<h2-v>01      Who are they?</h2-v>
 					<h4> Do you know each May is the Asian Pacific Heritage Month?</h4>
 					<h4>We often heard of Asian American and Asian people – but who are they?</h4>
+					
+					
+					
 					<div id = "treemap">
 						<div class='tableauPlaceholder' id='viz1589084938337' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;tr&#47;treemap_15890846904510&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='treemap_15890846904510&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;tr&#47;treemap_15890846904510&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1589084938337');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='1088px';vizElement.style.maxWidth='1188px';vizElement.style.width='100%';vizElement.style.minHeight='614px';vizElement.style.maxHeight='647px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='1088px';vizElement.style.maxWidth='1188px';vizElement.style.width='100%';vizElement.style.minHeight='614px';vizElement.style.maxHeight='647px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 					</div>
 
+	
 
-					<!--<div id="observablehq-174830da"></div>
-					<script type="module">
-					import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-					import define from "https://api.observablehq.com/@yanksc/asian-american-zoomable-sunburst.js?v=3";
-					const inspect = Inspector.into("#observablehq-174830da");
-					(new Runtime).module(define, name => (name === "chart") && inspect());
-					</script> -->
-					
-					<!-- <img src="img/who.png" alt="" id="vizforwho"> 
-					<div id="outer-circle"> </div>
-						<div id="eastasian">
-							<img src="img/eastasian.png" class="image">
-							<h6> East Asian American </h6>
-						</div>
-						<div id="southasian">
-							<img src="img/southasian.png" class="image">
-							<h6> South Asian American </h6>
-						</div>
-						<div id="southeast">
-							<img src="img/southeast.png" class="image">
-							<h6> Southeast Asian American </h6>
-						</div>-->
 				</div>
 			</div>
 		</section>
+
+		<!-- Demographics -->
+		<section id="who2">
+		<div id="vis"></div>
+
+
+
+
+
+		</section>
+
+
+
+
+
+
+
+
+
 
 		<!-- Demographics -->
 		<section id="location">
@@ -119,7 +156,7 @@
 						<img src="img/income.png" alt="" id="vizforincome"> 
 					</div>
 
-					<!--
+<!-- 					
 					<div id = "incomeinequality">
 						<iframe title="Ratio of income at the 90th percentile to income at the 10th percentile, from 1970 to 2016" aria-label="Interactive line chart" id="datawrapper-chart-yklm6" src="https://datawrapper.dwcdn.net/yklm6/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe>
 
@@ -132,7 +169,7 @@
 				</div>
 			</div>
 		</section>
-
+<div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/1834503" data-url="https://flo.uri.sh/visualisation/1834503/embed"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 		<!-- Population history-->
 		<section id="pophistory">
 			<div class="pophistory-container">
