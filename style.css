@@ -3,7 +3,10 @@
     margin: 0;
     /* box-sizing: border-box; */
 }
-
+div.disabled {
+    overflow-x: hidden; //horizontal
+    overflow-y: scroll; //vertical
+}
 html{
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
@@ -319,9 +322,15 @@ h6{
     padding-left: 100px;
     padding-right: 100px;
 }
-#race_bar{
+#racebar{
     padding-top: 50px;
-    background-color: grey;
+    background-color: #FFF9EE;
+    padding-bottom: 350px;
+}
+.race-container{
+
+    background-color: #FFF9EE;
+
 }
 #final{
     padding-top: 50px;

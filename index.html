@@ -18,34 +18,13 @@
     <script src="https://rawgit.com/misoproject/d3.chart/master/d3.chart.min.js"></script>
     <script src="https://rawgit.com/annaghi/d3.chart.layout.hierarchy/master/d3.chart.layout.hierarchy.js"></script>
 	<link rel="stylesheet" href="style.css">
-		
+	<link rel="stylesheet" href="./vendor/simpletimeline.css">
+    <script type="text/javascript" src="./vendor/simpletimeline-min.js"></script>
 		
 <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>	 -->
-<script>
-		(function() {
-		//   d3.json("new_flare.json", function(error, json) {
-			d3.json("new_flare.json").then(function(data){ 
-			// d3.json("https://rawgit.com/annaghi/d3.chart.layout.hierarchy/master/example/data/flare.json", function(error, json) {
 
-			var treemap = d3.select("#vis").append("svg")
-  
-			  .chart("treemap")
-  
-				.value("size")
-				.sortable("_DESC_")
-				//.zoomable()
-				.collapsible()
-				//.duration()
-				//.colors(['#FF0000', '#00FF00', '#0000FF'])
-				;
-  
-			treemap.draw(json);
-  
-		  });
-		}());
-	  </script>
 </head>
 
 	<body>
@@ -173,13 +152,15 @@
 
 		
 		<!-- Racing Bar Chart-->
-		<section id="race_bar">
-
+		<section id="racebar">
+			<div class="race-container">
 					<h2-v>05 The population of different ethnicity in Asian American has been changed over time. </h2-v>
 						<div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/1834503" data-url="https://flo.uri.sh/visualisation/1834503/embed">
 							<script src="https://public.flourish.studio/resources/embed.js"></script>
 						</div>
-
+						<div id="timeline" style="background: #FFF9EE;"></div>
+						<script type="text/javascript" src="./demo.js"></script>
+			</div>
 		</section>	
 		
 		
