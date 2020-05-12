@@ -9,7 +9,9 @@ html{
     font-family: 'Poppins', sans-serif;
     display: table;
     margin: auto; }
-
+.flourish-credit{
+    display:none;
+}
 a{
     text-decoration: none;
 }
@@ -317,7 +319,10 @@ h6{
     padding-left: 100px;
     padding-right: 100px;
 }
-
+#race_bar{
+    padding-top: 50px;
+    background-color: grey;
+}
 #final{
     padding-top: 50px;
     background-color: #FFF9EE;
@@ -337,6 +342,7 @@ h6{
     align-content: center;
     min-height: 1000px;
     padding-bottom: 15px;
+    background-color: #FBF3E1;
 }
 
 .who-container {
