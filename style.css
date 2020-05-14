@@ -1,42 +1,35 @@
-*{
+* {
     padding: 0;
-    margin: 0;
-    /* box-sizing: border-box; */
+    margin: 0; 
 }
-div.disabled {
-    overflow-x: hidden; //horizontal
-    overflow-y: scroll; //vertical
+
+div .disabled {
+    /* horizontal */
+    overflow-x: hidden; 
+    /* vertical */
+    overflow-y: scroll; 
 }
-html{
-    font-size: 18px;
-    font-family: 'Poppins', sans-serif;
-    display: table;
-    margin: auto; }
+
 .flourish-credit{
     display:none;
 }
-a{
+
+a {
     text-decoration: none;
 }
-/* from Interactive and reusable d3.treemap */
-/* http://bl.ocks.org/annaghi/5d24b37ebe077d4e919f */
 
-#vis {
-width: 960px;
-height: 500px; 
-position: center;}
-
-.cell text {
-cursor: move;
-font: 10px sans-serif;
-text-anchor: middle; }
-
-.cell rect {  
-stroke: #fff; }
-/* end of interactive and reusable d3.treemap */
+.container {
+    display: block;
+    min-height: 90vh;
+    width: 100vw;
+    padding: 50px 10vw 30px;
+    max-height: 1200px;
+    justify-content: center;
+    align-content: center;
+}
 
 body {
-    margin: 0;
+    width: 100vw;
     font-weight: 400;
     line-height: 1.5;
     color: #212529;
@@ -71,31 +64,6 @@ p-v{
     text-align: center;
 }
 
-h1 {
-    font-size: 4vw;
-    /* line-height: 100px; */
-    font-weight: bold;
-    color: #002949;
-    max-width: 450px;
-    padding-top: 135px;
-    position: left;
-}
-
-h1-v {
-    font-size: 4vw;
-    /* line-height: 100px; */
-    font-weight: bold;
-    color: #CA8851;
-    max-width: 700px;
-    /* padding-bottom: 15px; */
-    position: left;
-}
-
-h1-v:hover {
-    background-color: #CA8851;
-    color: #FFFFFF;
-}
-
 h2 {
     font-size: 38px;
     color: #FBF3E2;
@@ -115,11 +83,6 @@ h2-v {
     text-align: center;
     justify-content: center;
     padding-bottom: 25px;
-}
-
-h3 {
-    font-size: 28px;
-    color: #CA8851;
 }
 
 h4 {
@@ -155,70 +118,50 @@ h6{
     padding-left: 65px;
 }
 
-.footer {
-    display: block;
-    text-align: center;
-    align-items: center;
-    align-content: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-left: 200px;
-}
-
+/* header and nav-bar */
 
 #header {
-    left: 0;
+    display: flex;
+    /* position: sticky; */
     top: 0;
     width: 100vw;
     height: auto;
-    padding-top: 5vh;
+    padding: 5vh 10vw 10px;
     background-color: #FBF3E1;
     font-family: 'Poppins', sans-serif;
-}
-
-
-#header .header {
-    margin: 1vw 10vw;
-    min-height: 8vh;
-    /* margin-bottom: 15px; */
-}
-#logo {
-    margin: 0vw 10vw;
-}
-
-.header-container {
-    position: relative;
-    display: block;
-    margin: 0 0 2vw 10vw;
-    font-weight: 800;
-} 
-#header .nav-bar {
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-    width: 100%;
-    height: 100%;
-    /* max-width: 1000px; */
-    /* padding: auto; */
+    
 }
 
+#header h3 {
+    vertical-align: top;
+    font-size: 28px;
+    color: #CA8851;
+}
 
-.nav-list ul {
+.nav-list {
+    display: flex;
+    align-items: right;
+    justify-content: space-around;
+    vertical-align: text-top;
     list-style: none;
     text-align: center;
-    margin: 10px;
-    width: 800px;
-    /* padding-left: 160px; */
+    width: 50%;
+    padding-right: 5vw;
 }
 
-.nav-list li {
-    display: inline;
-    height: 45px;
-    width: 100px;
+.nav-list>li {
+    width: 5vh;
     font-weight: regular;
-    float: left;
-    margin-left: 10px;
 }
+
+.nav-list a {
+    font-size: 18px;
+    font-weight: 30px;
+    text-decoration: none;
+    color:grey;
+}
+
 
 /*#nav-long-item {
     width: 250px;
@@ -230,166 +173,92 @@ h6{
     padding-left: 15px;
 } 
 
-
-.nav-list a {
-    /* font-size: 18px;
-    font-weight: 30px; */
-    /* text-decoration: none; */
-    color:grey;
-    display: block;
-    padding: 3px;
-    margin: 0 0 0 10vw;
-}
-
-.container {
-    min-height: 90vh;
-    width: 100%;
-    display: flex;
-    align-items: left;
-    padding-left: 10px;
-}
-
-.hero-container {
-    position: relative;
-    display: block;
-    margin: 0 0 0 10vw;
-    /* position: absolute; */
-    min-height: 88vh;
-} 
+/* Sytle for landing page */
 
 #hero {
-    background-image: url(img/bg.jpg);
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: relative;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 900;
-
+    /* position: relative; */
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 0;
 }
-#race_bar {
 
-    background-size: cover;
-    background-position: top;
-    position: relative;
-}
-#hero .cta {
-    display: inline-block;
-    padding: 10px 40px;
-    color: #FFFFFF;
-    background-color: #CA8851;
-    border: none;
-    font-size: 24px;
+#hero h1 {
+    font-size: 4vw;
+    line-height: 1.2em;
     font-weight: bold;
-    letter-spacing: .1rem;
-    border-radius: 10px;
-    text-transform: uppercase;
-    margin-top: 25px;
-
+    color: #002949;
+    width: 25vw;
+    padding-top: 15vh;
 }
 
-
-.cta {
-    scroll-behavior: smooth;
+#hero h1-v {
+    font-size: 4vw;
+    line-height: 1.2em;
+    /* flex-wrap: nowrap; */
+    font-weight: bold;
+    color: #CA8851;
+    width: 30vw;
+    padding-bottom: 10vh;
 }
+
+#hero h1-v:hover {
+    background-color: #CA8851;
+    color: #FFFFFF;
+}
+
+#hero>img {
+    width: 40vw;
+    object-fit: contain;
+}
+
+/* who are they */
 
 #who {
     padding-top: 50px;
     background-color: #F9E7E6;
-    justify-content: center;
-    align-content: center;
-    max-height: 1000px;
-    padding-bottom: 30px;
+    max-height: 1200px;
 }
 
+/* profile */
 
-#who2 {
-    padding-top: 50px;
+#profile {
+    /* padding-top: 50px; */
     background-color: #F9E0E6;
-    justify-content: center;
-    align-content: center;
     max-height: 1000px;
-    padding-bottom: 30px;
 }
 
-#pophistory{
-    padding-top: 50px;
-    padding-bottom: 50px;
+/* from Interactive and reusable d3.treemap */
+/* http://bl.ocks.org/annaghi/5d24b37ebe077d4e919f */
+
+#vis {
+    width: 960px;
+    height: 500px; 
+    position: center;
+}
+    
+.cell text {
+    cursor: move;
+    font: 10px sans-serif;
+    text-anchor: middle;
+}
+    
+.cell rect {  
+    stroke: #fff; 
 }
 
-#barchartrace{
-    padding-left: 100px;
-    padding-right: 100px;
-}
-#racebar{
-    padding-top: 50px;
-    background-color: #FFF9EE;
-    padding-bottom: 80vh;
-}
-.race-container{
-
-    background-color: #FFF9EE;
-
-}
-#final{
-    padding-top: 50px;
-    background-color: #FFF9EE;
-}
-
-#vizforfinal{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-}
+/* Where are they */
 
 #location {
-    justify-content: center;
-    align-content: center;
-    min-height: 1000px;
-    padding-bottom: 15px;
     background-color: #FBF3E1;
+    max-height: 1200px;
 }
 
-.who-container {
-    position: relative;
-    display: block;
-    margin: 0px;
-} 
+/* income inequality */
 
-.who-container h2{
-    position: absolute;
-}
-
-#edu {
+#income {
+    max-height: none;
     background-color: #1B1D36;
-    justify-content: center;
-    padding-top: 25px;
-    align-content: center;
-    padding-bottom: 50px;
-}
-
-.edu-container {
-    position: relative;
-}
-
-#relation {
-    padding-left: 300px;
-    padding-right: 150px;
-}
-
-
-#vizforedu {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 145px;
-    padding-bottom: 50px;
-    margin-top: -30px;
-
 }
 
 #vizforincome {
@@ -402,11 +271,62 @@ h6{
     max-width: 1000px;
 }
 
-#viz1589222417783{
+#incomeinequality{
+    padding-left: 350px;
+    padding-right: 350px;
+    padding-bottom: 30px;
+    padding-top: 5px;
+    scale: 1, 1.25;
+}
 
+/* education gap */
+
+#edu {
+    max-height: none;
+    background-color: #F9E0E6;
+}
+
+#vizforedu {
+    display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 145px;
+    padding-bottom: 50px;
+    margin-top: -30px;
+
 }
+
+/* population change*/
+
+#population{
+    max-height: none;
+    background-color: #FFF9EE;
+}
+
+
+/* conclusion */
+
+#final {
+    background-color: #FFF9EE;
+    min-height: 0;
+}
+
+#vizforfinal {
+    width: 40%;
+    display: block;
+    margin: 15px auto 0;
+}
+
+/* footer */
+
+#footer {
+    padding-top: 25px;
+    min-height: 0;
+}
+
+
+/* unused css */
+
 
 #vizforquality{
     display: block;
@@ -439,7 +359,6 @@ h6{
    padding-bottom: -500px;
 }
 
-
 #southasian{
    position: relative;
    top: -600px;
@@ -459,9 +378,7 @@ h6{
   min-height: 400px;
   padding: 20px 0;
 }
-footer {
-  position: relative;
-}
+
 .l-labels, .r-labels {
   font-size: 11px;
 }
@@ -471,12 +388,9 @@ text.s-title {
 }
 
 
-
-
 .image:hover + h6 {
     display:block;
 }
-
 
 .image:hover {
     transform: scale(1.15);
@@ -518,59 +432,23 @@ text.s-title {
   color: white;
 }
 
-#observablehq-2a621b2f{
-    
-    height: 500px;
-    width: 40%;
-    position: center;
-    margin: 0 30vw;
-}
 
-#observablehq-174830da{
-    padding-left: 350px;
-    padding-right: 350px;
-    padding-bottom: 30px;
-    padding-top: 5px;
-}
 
-#treemap{
-    /* padding-left: 250px;
-    padding-right: 250px; */
-    margin: 0 20vw;
-    position: center;
-    /* left: 30%; */
-}
-
-#race_bar{
-    background: white;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 30px;
-    padding-top: 100px; 
-}
-
-#incomeinequality{
-    padding-left: 350px;
-    padding-right: 350px;
-    padding-bottom: 30px;
-    padding-top: 5px;
-    scale: 1, 1.25;
-}
-
-@media (min-width: 1200px)
-.container {
-    max-width: 1110px;
+/* @media (min-width: 1200px){
+    .container {
+        max-width: 1110px;
+    }
 }
 
 
-@media (min-width: 768px)
-.container {
-    max-width: 720px;
+@media (min-width: 768px){
+    .container {
+        max-width: 720px;
+    }
 }
 
-@media (min-width: 576px)
-.container {
-    max-width: 540px;
-}
-
-
+@media (min-width: 576px){
+    .container {
+        max-width: 540px;
+    }
+} */
