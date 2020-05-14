@@ -2,196 +2,99 @@
 <html>
 	<head>
 		<title>Facts about Asian American</title>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-		
-		
+
+		<!-- Bootstrap  -->
+		<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+		<!-- Bootstrap jQuery Model -->
+		<!-- 
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>	
+		-->
+
+		<!-- d3 library -->
+		<script src="https://d3js.org/d3.v5.min.js"></script>
+		<!-- <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script> -->
+		<script src="https://rawgit.com/misoproject/d3.chart/master/d3.chart.min.js"></script>
+    	<script src="https://rawgit.com/annaghi/d3.chart.layout.hierarchy/master/d3.chart.layout.hierarchy.js"></script>
+
 		<script src="script.js"></script>
-		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-		<script src="jquery-1.6.1.js"></script>
-		<script src="my_jquery.js"></script>
-		<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+		<!-- unknown imported js library -->
+		<!-- <script src="jquery-1.6.1.js"></script> -->
+		<!-- <script src="my_jquery.js"></script> -->
 		<script src="d3_code_slopegraph.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- font and style sheet -->
 		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 		
-		<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-    <script src="https://rawgit.com/misoproject/d3.chart/master/d3.chart.min.js"></script>
-    <script src="https://rawgit.com/annaghi/d3.chart.layout.hierarchy/master/d3.chart.layout.hierarchy.js"></script>
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="./vendor/simpletimeline.css">
-    <script type="text/javascript" src="./vendor/simpletimeline-min.js"></script>
+    	<link rel="stylesheet" href="./vendor/simpletimeline.css">
+    	<script type="text/javascript" src="./vendor/simpletimeline-min.js"></script>
+		<link rel="stylesheet" href="style.css">
 		
-<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>	 -->
-
-</head>
+	</head>
 
 	<body>
 		<!-- Header  -->
-		<section id="header">
-			<div class="header-container">
-				<div class="nav-bar">
-					<div class="logo">
-						<a href="#hero"><h3>FactsAboutAsian</h3></a>
-					</div>
-					
-					<div class="nav-list">
-						<ul>
-							<li><a href="#who">Who</a></li>
-							<li><a href="#location">Where</a></li>
-							<li><a href="#edu" id="nav-long-item">Income</a></li>
-							<li><a href="#pophistory" id="last-nav-item">Population</a></li>
-		        			
-		        			<!--<li><a href="#relation" id="last-nav-item">Relationship</a></li>-->
-		        		</ul>
-		        	</div>
-		        </div>
-		    </div>
+		<section id="header" class="nav-bar">		
+			<a href="#hero">
+				<h3>FactsAboutAsian</h3>
+			</a>			
+			<ul class="nav-list">
+				<li><a href="#who">Who</a></li>
+				<li><a href="#location">Where</a></li>
+				<li><a href="#edu" id="nav-long-item">Income</a></li>
+				<li><a href="#pophistory" id="last-nav-item">Population</a></li>
+			</ul>
 		</section>
 
 		<!-- Headline/Introction  -->
-		<section id="hero">
-			<div class="hero-container">
-				<div class="row">
-					<div class="col">
-						<h1>What We Talk About When We Talk About</h1>
-						<h1-v> Asian American</h1-v>
-					</div>
-				</div>
+		<section id="hero" class="container">
+			<div>
+				<h1>What We Talk About When We Talk About</h1>
+				<h1-v> Asian American</h1-v>
 			</div>
+			<img src="img/asian.png" alt="Girl in a jacket">
 		</section>
 
 		<!-- Who they are -->
-		<section id="who">
-			<div class="who-container">
-				<div>
-					<h2-v>01      Who are they?</h2-v>
-					<h4> Do you know each May is the Asian Pacific Heritage Month?</h4>
-					<h4>We often heard of Asian American and Asian people – but who are they?</h4>
-					
-					
-					
-					<!-- <div id = "treemap">
-						<div class='tableauPlaceholder' id='viz1589084938337' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;tr&#47;treemap_15890846904510&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='treemap_15890846904510&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;tr&#47;treemap_15890846904510&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1589084938337');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='1088px';vizElement.style.maxWidth='1188px';vizElement.style.width='100%';vizElement.style.minHeight='614px';vizElement.style.maxHeight='647px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='1088px';vizElement.style.maxWidth='1188px';vizElement.style.width='100%';vizElement.style.minHeight='614px';vizElement.style.maxHeight='647px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-					</div> -->
-					<div class="col"></div>
-					<div class="col">
-					<div class="flourish-embed flourish-hierarchy" data-src="visualisation/2355363" data-url="https://flo.uri.sh/visualisation/2355363/embed">
-						<script src="https://public.flourish.studio/resources/embed.js"></script></div>				</div>
-					</div>
-					<div class="col"></div>
-				</div>
+		<section id="who" class="container">
+			
+			<h2-v>01      Who are they?</h2-v>
+			<h4> Do you know each May is the Asian Pacific Heritage Month?</h4>
+			<h4>We often heard of Asian American and Asian people – but who are they?</h4>
+				
+			<!-- <div id = "treemap">
+				<div class='tableauPlaceholder' id='viz1589084938337' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;tr&#47;treemap_15890846904510&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='treemap_15890846904510&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;tr&#47;treemap_15890846904510&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1589084938337');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='1088px';vizElement.style.maxWidth='1188px';vizElement.style.width='100%';vizElement.style.minHeight='614px';vizElement.style.maxHeight='647px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='1088px';vizElement.style.maxWidth='1188px';vizElement.style.width='100%';vizElement.style.minHeight='614px';vizElement.style.maxHeight='647px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+			</div> -->
+				
+			<div class="flourish-embed flourish-hierarchy" data-src="visualisation/2355363" data-url="https://flo.uri.sh/visualisation/2355363/embed">
+				<script src="https://public.flourish.studio/resources/embed.js"></script></div>				</div>
+			</div>
+				
 		</section>
 
 		<!-- Demographics -->
-		<section id="who2">
-		<div id="vis"></div>
+		<section id="profile" class="container">
+			The profile of Asian American
+			<div id="vis"></div>
 		</section>
 
-
-		<!-- Demographics -->
-		<section id="location">
-			<div class="location-container">
-				<div>
-					<br><br>
-					<h2-v>02      Where are they located in the U.S.?</h2-v>
-					<h4> Hover on the name of origin to see detailed distribution </h4>
-					<br>
-
-					<div class='tableauPlaceholder' id='viz1589222417783' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ye&#47;YearGeoRace_15892223350380&#47;YearGeoRace_Avg&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='YearGeoRace_15892223350380&#47;YearGeoRace_Avg' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ye&#47;YearGeoRace_15892223350380&#47;YearGeoRace_Avg&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1589222417783');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else { vizElement.style.width='100%';vizElement.style.height='1027px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-					
-
-					<div id="observablehq-2a621b2f"></div>
-					<script type="module">
-					import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-					import define from "https://api.observablehq.com/@yanksc/state-choropleth.js?v=3";
-					const inspect = Inspector.into("#observablehq-2a621b2f");
-					(new Runtime).module(define, name => (name === "chart") && inspect());
-					</script>
-					<br>
-				</div>
+		<!-- population change and history -->
+		<section id="population" class="container">
+			
+			<h2-v>02      When did they come here?</h2-v>
+			<div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/1834503" data-url="https://flo.uri.sh/visualisation/1834503/embed">
+				<script src="https://public.flourish.studio/resources/embed.js"></script>
 			</div>
-		</section>
-
-
-		<!-- Education and income level -->
-		<section id="edu">
-			<div class="edu-container">
-				<div>
-					<!-- <h2-v>04      What's their education level?</h2-v> 
-					<br>-->
-					<!--<p>Percentage of U.S. Asians with Higher Education</p>
-					<h4>% of those ages 25 and older with a bachelor’s degree or more, by oringin group, 2015</h4>
-					<img src="img/edu.png" alt="" id="vizforedu">-->
-					<!-- <br>
-					<br>-->
-					<br>
-					<h2-v>03      What's their income level? </h2-v>
-					<div class = "vizforincome">
-						<img src="img/income.png" alt="" id="vizforincome"> 
-					</div>
-
-<!-- 					
-					<div id = "incomeinequality">
-						<iframe title="Ratio of income at the 90th percentile to income at the 10th percentile, from 1970 to 2016" aria-label="Interactive line chart" id="datawrapper-chart-yklm6" src="https://datawrapper.dwcdn.net/yklm6/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe>
-
-						<script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();</script>
-					</div> -->
-
-
-					<p> Most U.S. Asian origin groups have household incomes that call below those of Asian Americans overall.  Income inequality is rising more rapidly among Asian Americans than other racial or ethnic groups, reflecting wide disparities in income among Asian origin groups. </p>
-					
-				</div>
-			</div>
-		</section>
-
-
-
-		
-		<!-- Racing Bar Chart-->
-		<section id="racebar">
-			<div class="race-container">
-					<h2-v>05 The population of different ethnicity in Asian American has been changed over time. </h2-v>
-						<div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/1834503" data-url="https://flo.uri.sh/visualisation/1834503/embed">
-							<script src="https://public.flourish.studio/resources/embed.js"></script>
-						</div>
-						<div id="timeline" style="background: #FFF9EE;"></div>
-						<script type="text/javascript" src="./historical_timeline.js"></script>
-			</div>
+			
+			<div id="timeline" style="background: #FFF9EE;"></div>
+			<script type="text/javascript" src="./historical_timeline.js"></script>
+			
 		</section>	
 		
-		
-
-		<!-- Population history-->
-		<section id="pophistory">
-			<div class="pophistory-container">
-				
-				<div>
-					<h2-v>06 How does their population change over time?</h2-v>
-					<br>
-					<!-- <section id="barchartrace">
-						<div id="observablehq-b85c9977"></div>
-						<script type="module">
-						import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-						import define from "https://api.observablehq.com/@yunjieyao/bar-chart-race.js?v=3";
-						const inspect = Inspector.into("#observablehq-b85c9977");
-						(new Runtime).module(define, name => (name === "viewof keyframe") && inspect());
-						</script>
-
-						<div id="observablehq-058aceeb"></div>
-						<script type="module">
-						import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-						import define from "https://api.observablehq.com/@yunjieyao/bar-chart-race.js?v=3";
-						const inspect = Inspector.into("#observablehq-058aceeb");
-						(new Runtime).module(define, name => (name === "chart") && inspect());
-						</script>
-					</section> -->
-				</div>
-			</div> 
-		</section>
-		
-
         <!-- History 
         <section id="history">
         	<div class="history-container">
@@ -206,22 +109,68 @@
 			</div>
         </section> -->
 
-        <!-- Conclusion -->
-		<section id="final">
-			<div class="final-container">
-				<div>
-					<h2-v>Finally...</h2-v>
-					<img src="img/mahjong-parlor-floral-decorations.jpg" alt="" id="vizforfinal"> 
-					<h4> “No group can be generalized. We are not arguing that Asian people are the only minority, but this group has lacked close look for a long time” </h4>
-					<br>
-					<h4> - that’s why we created this website to help you know more about this gourp. We hope you enjoy reading this site :) </h4>
-					<br>
-				</div>
+		<!-- Geographic demography -->
+		<section id="location" class="container">
+
+			<h2-v>03      Where are they located in?</h2-v>
+			<h4> Select an Asian race to see their detailed distribution </h4>
+			
+			<iframe src="https://public.tableau.com/views/YearGeoRace/GeoCounty?:display_count=y&:publish=yes&:toolbar=n&:origin=viz_share_link&:showShareOptions=no&:showVizHome=no&:embed=true" 
+					width="100%" height="768px" frameborder="0">
+			</iframe>
+					
+			<!-- <div class='tableauPlaceholder' id='viz1589222417783' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ye&#47;YearGeoRace_15892223350380&#47;YearGeoRace_Avg&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='YearGeoRace_15892223350380&#47;YearGeoRace_Avg' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ye&#47;YearGeoRace_15892223350380&#47;YearGeoRace_Avg&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1589222417783');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else { vizElement.style.width='100%';vizElement.style.height='1027px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script> -->
+			<!-- <div id="observablehq-2a621b2f"></div>
+			<script type="module">
+				import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+				import define from "https://api.observablehq.com/@yanksc/state-choropleth.js?v=3";
+				const inspect = Inspector.into("#observablehq-2a621b2f");
+				(new Runtime).module(define, name => (name === "chart") && inspect()); 
+			</script> -->
+		</section>
+
+
+		<!-- income inequality -->
+		<section id="income" class="container">
+			
+			<h2-v>04      What's their income level? </h2-v>
+			<div class = "vizforincome">
+				<img src="img/income.png" alt="" id="vizforincome"> 
 			</div>
+
+			<!-- <div id = "incomeinequality">
+				<iframe title="Ratio of income at the 90th percentile to income at the 10th percentile, from 1970 to 2016" aria-label="Interactive line chart" id="datawrapper-chart-yklm6" src="https://datawrapper.dwcdn.net/yklm6/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe>
+
+				<script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();</script>
+			</div> -->
+
+			<p> Most U.S. Asian origin groups have household incomes that call below those of Asian Americans overall.  Income inequality is rising more rapidly among Asian Americans than other racial or ethnic groups, reflecting wide disparities in income among Asian origin groups. </p>
+							
+		</section>
+
+		<!-- education gap -->
+		<section id="edu" class="container">
+			<h2-v>05      What's their education level?</h2-v> 
+			
+			<!--<p>Percentage of U.S. Asians with Higher Education</p>
+			<h4>% of those ages 25 and older with a bachelor’s degree or more, by oringin group, 2015</h4>
+			<img src="img/edu.png" alt="" id="vizforedu">-->
+			
+		</section>
+
+
+        <!-- Conclusion -->
+		<section id="final" class="container">
+
+			<h2-v>Finally...</h2-v>
+			<h4> “No group can be generalized. We are not arguing that Asian people are the only minority, but this group has lacked close look for a long time” </h4>
+			<h4> - that’s why we created this website to help you know more about this gourp. We hope you enjoy reading this site :D </h4>
+			<img src="img/mahjong-parlor-floral-decorations.jpg" alt="" id="vizforfinal"> 
+			
 		</section>
 
 		<!-- Footer -->
-			<footer class = "footer">
+			<footer id="footer" class="container">
 				<div>
 					<h5> Visualization created by Ryan Liu, Yankai Huang and Yunjie Yao. </h5>
 					<h5> Image credit to https://www.newyorker.com/books/under-review/the-stories-we-tell-and-dont-tell-about-asian-american-lives. </h5>
