@@ -73,19 +73,25 @@
 
 		<!-- Who they are -->
 		<section id="who" class="container">
-			
-			<h2-v>01      Who are they?</h2-v>
-			<h4> The migrants from Asia have been in parts of the contemporary United States and now it consists 6.5% of U.S. population.</h4>
-			<h4> It's a heterogeneous group of people who traced their ancestry to one or more countries in Eastern, Southern and South Eastern Asia. </h4>
-			<!-- <h4> Do you know each May is the Asian Pacific Heritage Month?</h4>
-			<h4>We often heard of Asian American and Asian people – but who are they?</h4> -->
-				
+			<div id="whodesc">
+				<h2-v>Who are Asian Americans?</h2-v>
+				<h4> Asian Americans have been in parts of the contemporary United States. Now 6.5% of the U.S. population is consisted by Asians.</h4>
+				<h4> It's a heterogeneous group of people who traced their ancestry to one or more countries in Eastern, Southern and South Eastern Asia. </h4>
+				<p class="sectionfootnote">
+					*The figure shows the data in the census from people who self identified as Asian, regardless of generations or immigration status. 
+				</p>
+				<!-- <h4> Do you know each May is the Asian Pacific Heritage Month?</h4>
+				<h4>We often heard of Asian American and Asian people – but who are they?</h4> -->
+			</div>
+
+
 			<!-- <div id = "treemap">
 				<div class='tableauPlaceholder' id='viz1589084938337' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;tr&#47;treemap_15890846904510&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='treemap_15890846904510&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;tr&#47;treemap_15890846904510&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1589084938337');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='1088px';vizElement.style.maxWidth='1188px';vizElement.style.width='100%';vizElement.style.minHeight='614px';vizElement.style.maxHeight='647px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='1088px';vizElement.style.maxWidth='1188px';vizElement.style.width='100%';vizElement.style.minHeight='614px';vizElement.style.maxHeight='647px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 			</div> -->
+			
+			<div id="flourish-map" class="flourish-embed flourish-hierarchy" data-src="visualisation/2355363" data-url="https://flo.uri.sh/visualisation/2355363/embed">
+				<script src="https://public.flourish.studio/resources/embed.js"></script>			
 				
-			<div class="flourish-embed flourish-hierarchy" data-src="visualisation/2355363" data-url="https://flo.uri.sh/visualisation/2355363/embed">
-				<script src="https://public.flourish.studio/resources/embed.js"></script></div>				</div>
 			</div>
 				
 		</section>
@@ -93,7 +99,9 @@
 		<!-- Demography -->
 
 		<section id="demopage" class="container">
-			<!-- <h2-v>02 Who are the Asian Americans?</h2-v> -->
+			<h2-v>Who are Asian Americans?</h2-v>
+				<h4 class="pageh4"> Although the ancestries are coming from Asia, the Asians in American have distinct cultural difference and immigration histories. </h4>
+				<hr class="hr-text" data-content=""></hr>
 			<section>
 				<ul class="tabs-controls">
 					<li class="tabs-controls__item">
@@ -217,16 +225,21 @@
 			</section>
 
 		</section>
-		
+
 		<section id="matchgame">
+			<h2-v>  </h2-v>
+			<h2-v>Fast fact about Asian Americans!</h2-v>
+			<h4 class="pageh4"> Now you defeinitely learned a lot about Asian Americans! 
+				Let's see if you could match them with the traits! </h4>
+			<!-- <hr class="hr-text" data-content=""></hr> -->
 				<div id="content">
-	
-					<div id="cardPile"> </div>
 					<div id="cardSlots"> </div>
+					<div id="cardPile"> </div>
+
 				
 					<div id="successMessage">
-					<h2 class="congratBox">Congratulations! You got it all right! you're knowledgable about Asian Americans!</h2>
-					<div onclick="init()">Play Again</div>
+						<h2 id="congratBox">Congratulations! You got it all right! you're knowledgable about Asian Americans now!</h2>
+						<div onclick="init()">Play Again</div>
 					</div>
 				
 				</div>
@@ -291,19 +304,12 @@
 		<!-- education gap -->
 		<section id="edu" class="container">
 			<h2-v>05      What's their education level?</h2-v> 
-<<<<<<< HEAD
-			<div class='tableauPlaceholder' id='viz1589539125882' style='position: relative; width:40vw;'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;In&#47;IncomeandEduCross-analysis&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='IncomeandEduCross-analysis&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;In&#47;IncomeandEduCross-analysis&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1589539125882');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='700px';vizElement.style.height='627px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='700px';vizElement.style.height='627px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-			<!--<p>Percentage of U.S. Asians with Higher Education</p>
-			<h4>% of those ages 25 and older with a bachelor’s degree or more, by oringin group, 2015</h4>
-			<img src="img/edu.png" alt="" id="vizforedu">-->
-=======
 
 			<div id = "vizforedu">
 				<iframe src="https://public.tableau.com/views/IncomeandEduCross-analysis/Dashboard1?:display_count=y&:publish=yes&:toolbar=n&:origin=viz_share_link&:showShareOptions=no&:showVizHome=no&:embed=true" 
 					width="100%" height="600px" frameborder="0">
 				</iframe>
 			</div>
->>>>>>> 5b4dacff4b7fbab56bf612d4e48f84e9ae4cbab9
 			
 
 			<div class='tableauPlaceholder' id='viz1589540231139' style='position: relative; width:40vw;'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pe&#47;PerCapitaIncome_15895387651520&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='PerCapitaIncome_15895387651520&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pe&#47;PerCapitaIncome_15895387651520&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1589540231139');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1100px';vizElement.style.height='627px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1100px';vizElement.style.height='627px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>

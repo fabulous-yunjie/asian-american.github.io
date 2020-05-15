@@ -10,88 +10,35 @@
   --slot-hover-color: #AAA;
   --slot-font-color: #555;
   --correct-color: linear-gradient(135deg, #fad961 0%,#f76b1c 100%);
+  --card-margin: 0%;
 }
-
-/* #card1.correct {
-  background: var(--correct-color);
-}
-
-#card2.correct {
-  background: var(--correct-color);
-}
-
-#card3.correct {
-  background: var(--correct-color);
-}
-
-#card4.correct {
-  background: var(--correct-color);
-}
-
-#card5.correct {
-  background: var(--correct-color);
-}
-
-#card6.correct {
-  background: var(--correct-color);
-}
-
-#card7.correct {
-  background: var(--correct-color);
-}
-
-#card8.correct {
-  background: var(--correct-color);
-}
-
-#card9.correct {
-  background: var(--correct-color);
-}
-
-#card10.correct {
-  background: var(--correct-color);
-} */
 
 /* Give headings their own font */
-.congratBox {
-  font-size: 1em;
-}
+
 
 /* Main content area */
 #content {
-  margin: 80px 70px;
+  margin: auto;
   text-align: center;
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
 }
 
-/* Header/footer boxes */
-.wideBox {
-  clear: both;
-  text-align: center;
-  margin: 50px;
-  border: 1px solid #333;
-}
-
-.wideBox h1 {
-  font-weight: bold;
-  margin: 20px;
-  font-size: 1em;
-}
-
 /* Slots for final card positions */
 
 /* The initial pile of unsorted cards */
-#cardPile {
-  background: none;
-}
 
 #cardSlots{
-  padding: 1em;
-  width: 38vw;
-  height: 30vw;
-  margin-right: 1em;
+
+  background: var(--slot-bg-color);
+  /* float: right; */
+  width: 36%;
+  height: 50vh;
+  margin-top: 3vh;
+  margin-left: 33vw;
+  /* padding-left: 40vw; */
+
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
@@ -100,23 +47,9 @@
   -webkit-box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.8);
   box-shadow: 0 0 0.8em rgba(0, 0, 0, 0.8);
   /* overflow:auto; */
-}
 
-#cardSlots {
-    background: var(--slot-bg-color);
-    position: Center;
-    margin-top: 2vh;
-    margin-left: 25vw;
-    /* padding-top: 40vh; */
  }
-  
 
-
- #cardPile {
-     width:80vw;
-     height:20vh;
-     visibility: none;
- }
     /* Individual cards and slots */
 #cardSlots div, #cardPile div {
   position:absolute;
@@ -165,16 +98,18 @@
   /* font-family: 'Lobster', sans-serif; */
   font-weight: 600;
   font-size: 1.2em;
+  margin-left:5.5vw;
 }
 #cardPile div.correct{
     background: #FFF;
     transform: rotateX(-20deg) rotateY(15deg) scaleX(1.2) scaleY(1.2);
 
 }
-  #cardPile div.correct:hover{
-    transform: rotateX(-20deg) rotateY(15deg) scaleX(1.25) scaleY(1.25);
-  opacity: 1;
-  }
+
+#cardPile div.correct:hover{
+  transform: rotateX(-20deg) rotateY(15deg) scaleX(1.25) scaleY(1.25);
+opacity: 1;
+}
 
 #cardPile div.ui-draggable-dragging {
   -moz-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8);
@@ -185,42 +120,41 @@
 
 #card1{
     position: absolute;
-    left:10%;
+    left: calc(var(--card-margin)+10%);
     padding-top:1vh;
     margin-top:1vh;
+    
 }
 #card2{
-    left:66%;
+    left: calc(var(--card-margin)+66%);
 }
 #card3{
-    left:58%;
+    left: calc(var(--card-margin)+58%);
 }
 #card4{
-    left: 50%;
+    left: calc(var(--card-margin)+50%);
 }
 #card5{
-    left: 74%;
+    left: calc(var(--card-margin)+74%);
 }
 #card6{
-    left: 18%;
+    left: calc(var(--card-margin)+18%);
 }
 
 #card7{
-    left: 26%;
+    left: calc(var(--card-margin)+26%);
 }
 #card8{
-    left: 42%;
+    left: calc(var(--card-margin)+42%);
 }
 #card9{
-    left: 34%;
-} */
+    left: calc(var(--card-margin)+34%);
+} 
 /* Individually coloured cards */
 /* "You did it!" message */
 #successMessage {
-  position: absolute;
-  left: 580px;
-  top: 250px;
-  width: 0;
+  position: relative;
+  width: 50%;
   height: 0;
   z-index: 100;
   background: #dfd;
@@ -232,4 +166,7 @@
   -webkit-box-shadow: 0.3em 0.3em 0.5em rgba(0, 0, 0, 0.8);
   box-shadow: 0.3em 0.3em 0.5em rgba(0, 0, 0, 0.8);
   padding: 20px;
+}
+#congratBox {
+  font-size: 1em;
 }
