@@ -1,4 +1,5 @@
 * {
+    box-sizing: border-box;
     padding: 0;
     margin: 0; 
 }
@@ -147,11 +148,10 @@ h6{
     list-style: none;
     text-align: center;
     width: 50%;
-    padding-right: 5vw;
 }
 
 .nav-list>li {
-    width: 5vh;
+    width: 5vw;
     font-weight: regular;
 }
 
@@ -161,17 +161,6 @@ h6{
     text-decoration: none;
     color:grey;
 }
-
-
-/*#nav-long-item {
-    width: 250px;
-    padding-left: 15px;
-}*/
-
-#last-nav-item {
-    width: 150px;
-    padding-left: 15px;
-} 
 
 /* Sytle for landing page */
 
@@ -220,31 +209,11 @@ h6{
     max-height: 1200px;
 }
 
-/* profile */
+/* demopage */
 
-#profile {
-    /* padding-top: 50px; */
-    background-color: #F9E0E6;
-    max-height: 1000px;
-}
-
-/* from Interactive and reusable d3.treemap */
-/* http://bl.ocks.org/annaghi/5d24b37ebe077d4e919f */
-
-#vis {
-    width: 960px;
-    height: 500px; 
-    position: center;
-}
-    
-.cell text {
-    cursor: move;
-    font: 10px sans-serif;
-    text-anchor: middle;
-}
-    
-.cell rect {  
-    stroke: #fff; 
+#demopage {
+    max-height: none;
+    background: #FBF3E1;
 }
 
 /* Where are they */
@@ -254,29 +223,33 @@ h6{
     max-height: 1200px;
 }
 
+#location iframe {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* income inequality */
 
 #income {
     max-height: none;
     background-color: #1B1D36;
+    padding-bottom: 50px;
+}
+
+#incomeinequality{
+    display: block;
+    margin: 25px auto 0;
+    /* max-height: 1300px;*/
+    width: 80vw;
+    max-width: 1100px;
 }
 
 #vizforincome {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 50px;
-    padding-left: 30px;
-    max-height: 1300px;
-    max-width: 1000px;
-}
-
-#incomeinequality{
-    padding-left: 350px;
-    padding-right: 350px;
-    padding-bottom: 30px;
-    padding-top: 5px;
-    scale: 1, 1.25;
+    margin: 0 auto;
+    width: 80vw;
+    max-width: 1100px;
 }
 
 /* education gap */
@@ -288,12 +261,9 @@ h6{
 
 #vizforedu {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 145px;
-    padding-bottom: 50px;
-    margin-top: -30px;
-
+    margin: 0 auto;
+    width: 40vw;
+    max-width: 700px;
 }
 
 /* population change*/
@@ -323,132 +293,3 @@ h6{
     padding-top: 25px;
     min-height: 0;
 }
-
-
-/* unused css */
-
-
-#vizforquality{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 300px;
-    padding-right: 300px;
-    padding-bottom: 60px;
-
-}
-
-#outer-circle {
-   border: 1px;
-   background-color: #BDBDBD;
-   opacity: 15%;
-   border-radius: 50%;
-   height: 745px;
-   width: 745px;
-   position: relative;
-   top: 150px;
-   left: 25%;
-   z-index: 1;
- }
-
-#eastasian{
-   position: relative;
-   top: -570px;
-   left: 40%;
-   z-index: 2;
-   padding-bottom: -500px;
-}
-
-#southasian{
-   position: relative;
-   top: -600px;
-   left: 30%;
-   z-index: 2;
-}
-
-#southeast{
-   position: relative;
-   top: -900px;
-   left: 55%;
-   z-index: 2;
-}
-
-/* for slope graph */
-#slopegraph {
-  min-height: 400px;
-  padding: 20px 0;
-}
-
-.l-labels, .r-labels {
-  font-size: 11px;
-}
-text.s-title {
-  fill: #130C0E;
-  letter-spacing: 2px;
-}
-
-
-.image:hover + h6 {
-    display:block;
-}
-
-.image:hover {
-    transform: scale(1.15);
-}
-
-#history {
-    background-color: #1B1D36;
-    justify-content: center;
-    align-content: center;
-    margin-top: 100px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.history-container {
-    position: relative;
-}
-
-
-.gallery {
-  background: #EEE;
-}
-
-.gallery-cell {
-  width: 66%;
-  height: 200px;
-  margin-right: 10px;
-  background: #8C8;
-  counter-increment: gallery-cell;
-}
-
-/* cell number */
-.gallery-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(gallery-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
-}
-
-
-
-/* @media (min-width: 1200px){
-    .container {
-        max-width: 1110px;
-    }
-}
-
-
-@media (min-width: 768px){
-    .container {
-        max-width: 720px;
-    }
-}
-
-@media (min-width: 576px){
-    .container {
-        max-width: 540px;
-    }
-} */

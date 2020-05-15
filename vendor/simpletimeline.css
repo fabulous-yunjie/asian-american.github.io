@@ -2,13 +2,8 @@ html {
 	overflow-x: hidden;
 }
 
-* {
-	box-sizing: border-box;
-}
-
 .timeline-wrapper {
-	padding-top: 100px;
-	padding-bottom: 100px;
+	margin-top: 50px;
 	position: relative;
 }
 
@@ -28,9 +23,9 @@ html {
 
 .timeline-wrapper .line {
 	height: 1px;
-	width: 120%;
+	width: 100vw;
 	top: 0;
-	left: 0;
+	left: -10vw;
 	bottom: 0;
 	margin: auto;
 	position: absolute;
@@ -91,8 +86,8 @@ html {
 .tl-node p {
 	margin: 0;
 	font-size: 0.8rem;
-  text-align: center;
-  color:  #CA8851;
+  	text-align: center;
+  	color:  #CA8851;
 	position: absolute;
 	top: -30px;
 	width: 100%;
@@ -132,7 +127,7 @@ html {
 
 .tl-node .data img {
 	width: 100%;
-	height: auto;
+	max-height: auto;
 	display: block;
 }
 

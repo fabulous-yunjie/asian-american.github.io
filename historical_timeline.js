@@ -1,45 +1,47 @@
-const DATA = [
-  {
-    year: '1790',
-    title: '<h3>The Naturalization Act of 1790</h3> limited naturalization to immigrants who were "free white person" which excluded Native Americans, indentured servants, slaves, free blacks and later Asians.',
-    image: 'https://historythings.com/wp-content/uploads/2017/01/usconstitution2-1024x586.png'
-  },
-  {
-    year: '1850',
-    title: '<h3>First Wave</h1>The first wave occurred to fill demands for labor primarily on the West Coast during the California Gold Rush.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/The_Chinese_Must_Go_-_Magic_Washer_-_1886_anti-Chinese_US_cartoon.jpg/440px-The_Chinese_Must_Go_-_Magic_Washer_-_1886_anti-Chinese_US_cartoon.jpg'
-  },
-  {
-    year: '1917',
-    title: '<h3>Exclusion era</h3> The prohibitions of Chinese and Japanese immigration were consolidated and the exclusion was expanded to Asia as a whole in the Asiatic Barred Zone Act The Immigration Act of 1924 introduced national origin quotas for the entire Eastern Hemisphere, and barred the immigration of "aliens ineligible for citizenship.',
-    image: 'https://www.historybeyond.com/wp-content/uploads/2019/05/1917-image-700px.jpg'
-  },
-  {
-    year: '1950s',
-    title: '<h3>Phasing out of exclusionary</h3>The McCarran–Walter Act of 1952, which repealed the remnants of the "free white persons" restriction of the Naturalization Act of 1790, permitting Asian and other non-white immigrants to become naturalized citizens.',
-    image: 'https://upload.wikimedia.org/wikipedia/en/thumb/9/90/TRUMANLUCECELLER.jpg/220px-TRUMANLUCECELLER.jpg'
-  },
-  {
-    year: '1965',
-    title: '<h3>New Waves of Asian Immigration</h3>Immigration and Nationality Act Amendments of 1965 eliminates racial/nationality-based discrimination in immigration quotas',
-    image: 'https://i.ytimg.com/vi/4iWPLfTL7Z0/hqdefault.jpg'
-  },
-  {
-    year: '1982',
-    title: '<h3>Murder of Vincent Chin</h3>Vincent Chin, a Chinese American, was beaten to death in Highland Park, Michigan near Detroit. His murder became a rally point for Asian Americans. Vincent Chin\'s murder is often considered the beginning of a pan-ethnic Asian American movement. ',
-    image: 'https://sampan.org/wp-content/uploads/2020/03/unnamed.jpg'
-  },
-  {
-    year: '1992',
-    title: '<h3>Asian Pacific American Heritage Month</h3>May was officially designated as Asian-Pacific American Heritage Month two years later',
-    image: 'http://penguinrandomhouselibrary.com/wp-content/uploads/2018/05/Asian-Pacific-Heritage-Month.png'
-  },
-  {
-    year: '2010-',
-    title: '<h3>Immigration by Employment</h3>Immigration from Asia surpassed immigration from Latin America.<br> Many of these immigrants are recruited by American companies from college campuses in India, China, and South Korea.',
-    image: 'https://shrm-res.cloudinary.com/image/upload/c_crop,h_1794,w_4183,x_0,y_1680/w_auto:100,w_2100,h_900,q_auto,f_auto/v1/Magazine/SHRM_Re-use_Immigration2_kspdep'
-  },
-];
+// const DATA = [
+//   {
+//     year: '1790',
+//     title: '<h3>The Naturalization Act of 1790</h3> limited naturalization to immigrants who were "free white person" which excluded Native Americans, indentured servants, slaves, free blacks and later Asians.',
+//     image: 'https://historythings.com/wp-content/uploads/2017/01/usconstitution2-1024x586.png'
+//   },
+//   {
+//     year: '1850',
+//     title: '<h3>First Wave</h1>The first wave occurred to fill demands for labor primarily on the West Coast during the California Gold Rush.',
+//     image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/The_Chinese_Must_Go_-_Magic_Washer_-_1886_anti-Chinese_US_cartoon.jpg/440px-The_Chinese_Must_Go_-_Magic_Washer_-_1886_anti-Chinese_US_cartoon.jpg'
+//   },
+//   {
+//     year: '1917',
+//     title: '<h3>Exclusion era</h3> The prohibitions of Chinese and Japanese immigration were consolidated and the exclusion was expanded to Asia as a whole in the Asiatic Barred Zone Act The Immigration Act of 1924 introduced national origin quotas for the entire Eastern Hemisphere, and barred the immigration of "aliens ineligible for citizenship.',
+//     image: 'https://www.historybeyond.com/wp-content/uploads/2019/05/1917-image-700px.jpg'
+//   },
+//   {
+//     year: '1950s',
+//     title: '<h3>Phasing out of exclusionary</h3>The McCarran–Walter Act of 1952, which repealed the remnants of the "free white persons" restriction of the Naturalization Act of 1790, permitting Asian and other non-white immigrants to become naturalized citizens.',
+//     image: 'https://upload.wikimedia.org/wikipedia/en/thumb/9/90/TRUMANLUCECELLER.jpg/220px-TRUMANLUCECELLER.jpg'
+//   },
+//   {
+//     year: '1965',
+//     title: '<h3>New Waves of Asian Immigration</h3>Immigration and Nationality Act Amendments of 1965 eliminates racial/nationality-based discrimination in immigration quotas',
+//     image: 'https://i.ytimg.com/vi/4iWPLfTL7Z0/hqdefault.jpg'
+//   },
+//   {
+//     year: '1982',
+//     title: '<h3>Murder of Vincent Chin</h3>Vincent Chin, a Chinese American, was beaten to death in Highland Park, Michigan near Detroit. His murder became a rally point for Asian Americans. Vincent Chin\'s murder is often considered the beginning of a pan-ethnic Asian American movement. ',
+//     image: 'https://sampan.org/wp-content/uploads/2020/03/unnamed.jpg'
+//   },
+//   {
+//     year: '1992',
+//     title: '<h3>Asian Pacific American Heritage Month</h3>May was officially designated as Asian-Pacific American Heritage Month two years later',
+//     image: 'http://penguinrandomhouselibrary.com/wp-content/uploads/2018/05/Asian-Pacific-Heritage-Month.png'
+//   },
+//   {
+//     year: '2010-',
+//     title: '<h3>Immigration by Employment</h3>Immigration from Asia surpassed immigration from Latin America.<br> Many of these immigrants are recruited by American companies from college campuses in India, China, and South Korea.',
+//     image: 'https://shrm-res.cloudinary.com/image/upload/c_crop,h_1794,w_4183,x_0,y_1680/w_auto:100,w_2100,h_900,q_auto,f_auto/v1/Magazine/SHRM_Re-use_Immigration2_kspdep'
+//   },
+// ];
+
+let DATA = [{"year":"1790","title":"<h3>The Naturalization Act of 1790</h3>The Act limited naturalization to immigrants who were \"free white person\" which excluded Native Americans, indentured servants, slaves, free blacks and later Asians.","image":"https://historythings.com/wp-content/uploads/2017/01/usconstitution2-1024x586.png"},{"year":"1850","title":"<h3>First wave</h3>The first wave occurred to fill demands for labor primarily on the West Coast during the California Gold Rush.","image":"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/The_Chinese_Must_Go_-_Magic_Washer_-_1886_anti-Chinese_US_cartoon.jpg/440px-The_Chinese_Must_Go_-_Magic_Washer_-_1886_anti-Chinese_US_cartoon.jpg"},{"year":"1870","title":"<h3>Detailed Asian groups became part of the census. </h3>The flow of migrants from China began to rise constituting the first wave of non-European immigrants since the end of the slave trade. In 1860, the racial category of \"Chinese\" was included on Census Questionnare in California only.","image":"https://www.census.gov/data-tools/demo/race/images/1870.jpg"},{"year":"1882","title":"<h3>The Chinese Exclusion Act</h3>With the post-Civil War economy in decline by the 1870s, public opinion and law in both California and nationally began to demonize Chinese workers and immigrants in any role, blaming Chinese \"coolies\" for depressed wage levels. Later in 1880s, the Act was signed and prohibited all immigration of Chinese laborers. This was the first law implemented to prevent all members of a specific ethnic or national group from immigrating.","image":"https://upload.wikimedia.org/wikipedia/commons/0/0c/Chinese_exclusion_article_1901.jpg"},{"year":"1900","title":"<h3>Japanese immigration</h3>The Chinese Exclusion Act of 1882 left room for increasing recruitment of Japanese as a replacement for Chinese labourers. In a period of unrestricted immigration, over 127,000 Japanese entered the U.S. and, in particular, significantly contributed to agricultural development in Western-Pacific parts. As the number of Japanese in the United States increased, resentment against their success and fears of a \"yellow peril\" grew into an anti-Japanese movement similar to that faced by earlier Chinese immigrants.","image":"https://upload.wikimedia.org/wikipedia/commons/0/09/Mountain_View%2C_California._Weeding_garlic_field_several_weeks_before_evacuation._Farmers_and_other_._._._-_NARA_-_537590.jpg"},{"year":"1924","title":"<h3>Exclusion era</h3>The prohibitions of Chinese and Japanese immigration were consolidated and the exclusion was expanded to Asia as a whole in the Asiatic Barred Zone Act. The Immigration Act of 1924 introduced national origin quotas for the entire Eastern Hemisphere, and barred the immigration of \"aliens ineligible for citizenship.","image":"https://www.historybeyond.com/wp-content/uploads/2019/05/1917-image-700px.jpg"},{"year":"1930","title":"<h3>\"Sailing\" of Filipinos</h3>Since Philippines rematins a territory of the United States (1898-1946), as U.S. Nationals, Filipinos were unrestricted from immigrating to the US by the Immigration Act of 1917 that restricted other Asians. Filipinos of this wave were mostly laborers, predominantly Ilocano and Visayans. In addition, beginning in 1901, Filipinos were allowed to enlist in the United States Navy. While serving, Filipino Sailors would bring over their spouse from the Philippines and  were exempt to quota restrictions placed on Filipino immigration at the time. This wave of immigration ended due to the Philippine Independence Act in 1934, which restricted immigration to 50 persons a year.","image":"https://upload.wikimedia.org/wikipedia/commons/5/5e/5ViewsOfStMaloLouisiana1883.jpg"},{"year":"1950","title":"<h3>Japanese \"war brides\"</h3>After World War II, the largest group of new Japanese immigrants were women who had married American soldiers during the occupation of Japan, the war brides. In some ways, they had a more difficult time than the first Japanese immigrants because of lacking social network and moving to places where few Japanese people were living.","image":"http://media.discovernikkei.org/articles/6345/WarBride2.jpg"},{"year":"1965","title":"<h3>Phasing out of exclusionary</h3>Following the McCarran Walter Act of 1952, which permitted Asian and other non-white immigrants to become naturalized citizens, the Hart Celler Act of 1965 created a seven-category preference system that gives priority to relatives of U.S. citizens and legal permanent residents, as well as to professionals and other individuals with specialized skills for the strong demand for immigrant workers by U.S. employers.","image":"https://i.ytimg.com/vi/4iWPLfTL7Z0/hqdefault.jpg"},{"year":"1990","title":"<h3>The diversity of Asian immigrants</h3>To address the issue of aiding new immigrants when reporting their race, a revised list of examples was added to the race question instruction on 1990 Census, which appeared near the  Other API  write-in line.  Hmong,   Fijian,   Laotian,   Thai,    Tongan,   Pakistani,  and  Cambodian  were used as examples.","image":"https://www.census.gov/data-tools/demo/race/images/1990.jpg"},{"year":"1992","title":"<h3>Asian Pacific American Heritage Month</h3>May was officially designated as Asian-Pacific American Heritage Month two years later.","image":"http://penguinrandomhouselibrary.com/wp-content/uploads/2018/05/Asian-Pacific-Heritage-Month.png"},{"year":"2009","title":"<h3>Surge of Asian immigrantion</h3>At the first time, the number of immigration from Asia surpassed the number from Latin America. Many of these immigrants are recruited by American companies from college campuses in India, China, and South Korea.","image":"https://shrm-res.cloudinary.com/image/upload/c_crop,h_1794,w_4183,x_0,y_1680/w_auto:100,w_2100,h_900,q_auto,f_auto/v1/Magazine/SHRM_Re-use_Immigration2_kspdep"},{"year":"2010","title":"<h3>A more accurate census</h3>The term  Asian Americans  is broad and needs a close look at every ethnicity that falls into that. The diversity of this group reflected on 2010 census questionnaire: Hmong, Laotian, Thai, Pakistani, Cambodian, and so on, were added to the  Other Asian  response category.","image":"https://www.census.gov/data-tools/demo/race/images/2010.jpg"},{"year":"2020","title":"<h3>The fastest-growing racial group</h3>Asian Americans are the fastest-growing populations in the United States and are expected to constitute 36% of the immigrant population by 2055, surpassing Latinos, who by then will be 34% of immigrants.","image":"https://image.pbs.org/curate-console/ac0776d0-d196-42aa-81b6-542a19a81bd4.jpg?focalcrop=862x431x50x10&format=auto"}]
 
 if(document.getElementById('timeline')) {
   let timeline = new Timeline('timeline', DATA);

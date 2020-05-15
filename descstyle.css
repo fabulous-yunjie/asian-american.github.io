@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css?family=Sofia|Lato|Lobster|Poppins|Pacifico|Anton|Kaushan+Script|Roboto|Open+Sans:300,400,600,700");
+
+.tabs-controls {
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 0 30px;
+  list-style-type: none;
+}
+
+.tabs-controls__link {
+  display: block;
+  padding: 16px 32px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #423E37;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.tabs-controls__link:after {
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 0;
+  height: 4px;
+  background-color: #423E37;
+  border-radius: 2px;
+  margin: auto;
+  content: '';
+  transition: width 0.4s;
+}
+.tabs-controls__link:hover {
+  position: relative;
+  color: white;
+  background-color: #CA8851;
+  transition: background-color 1s;
+}
+
+.tabs-controls__link--active:after {
+  width: 100%;
+}
+
+.cards-container {
+  position: relative;
+  z-index: 1;
+  width: 60vw;
+  height: 40vh;
+  margin: 0 auto;
+}
+
+.card {
+  position: absolute;
+  width: 60vw;
+  height: 50vh;
+  background-color: white;
+  box-shadow: 9px 11px 3px 0px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  padding: 10px;
+  transition: transform 0.3s, opacity 0.2s;
+  text-align: Center;
+
+}
+.card p{
+  margin: 1.5vh auto;
+  font-size: 2.5vmin;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #423E37;
+  text-align: left;
+}
+
+.card-title{
+  margin-top: 2vh;
+  font-family: 'Anton', sans-serif;
+  font-weight: 400;
+  font-size: 5vmin;
+  line-height: 1;
+  color: #CA8851;
+  transition: background-color 1s;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+
+}
+.card.hidden {
+  z-index: 100;
+  opacity: 0.5;
+  color: #fff;
+  opacity: 0;
+  transition: color 0.5s, background-color 0.5s, transform 1s, opacity 0.2s 0.4s;
+}
+.card.hidden h1 {
+  color: #336795;
+  transition: color 0.5s;
+}
+.card.hidden:nth-of-type(1) {
+  transform: rotate(-53deg) translateX(101%) translateY(-2%) scale(0.6) skewX(8deg) skewY(7deg);
+}
+.card.hidden:nth-of-type(2) {
+  transform: rotate(-34deg) translateX(101%) translateY(-8%) scale(0.5) skewX(2deg) skewY(11deg);
+}
+.card.hidden:nth-of-type(3) {
+  transform: rotate(-60deg) translateX(101%) translateY(-57%) scale(0.3) skewX(8deg) skewY(7deg);
+}
+.card.hidden:nth-of-type(4) {
+  transform: rotate(-56deg) translateX(101%) translateY(-29%) scale(0.2) skewX(11deg) skewY(8deg);
+}
+.card.hidden:nth-of-type(5) {
+  transform: rotate(-62deg) translateX(101%) translateY(-10%) scale(0.9) skewX(3deg) skewY(1deg);
+}
+.card.hidden:nth-of-type(6) {
+  transform: rotate(-15deg) translateX(101%) translateY(-36%) scale(0.6) skewX(12deg) skewY(10deg);
+}
+.card.hidden:nth-of-type(7) {
+  transform: rotate(-73deg) translateX(101%) translateY(-60%) scale(0.2) skewX(4deg) skewY(11deg);
+}
+.card.hidden:nth-of-type(8) {
+  transform: rotate(-31deg) translateX(101%) translateY(-43%) scale(0.8) skewX(2deg) skewY(5deg);
+}
+.card.hidden:nth-of-type(9) {
+  transform: rotate(-83deg) translateX(101%) translateY(-48%) scale(0.6) skewX(1deg) skewY(11deg);
+}
+.card.hidden:nth-of-type(10) {
+  transform: rotate(-70deg) translateX(101%) translateY(-30%) scale(0.9) skewX(9deg) skewY(4deg);
+}
+.card.hidden:nth-of-type(11) {
+  transform: rotate(-72deg) translateX(101%) translateY(-54%) scale(0.3) skewX(10deg) skewY(8deg);
+}
+.card:nth-of-type(1) {
+  z-index: 10;
+  transform: translateX(0px) translateY(0px);
+}
+.card:nth-of-type(2) {
+  z-index: 9;
+  transform: translateX(10px) translateY(10px);
+}
+.card:nth-of-type(3) {
+  z-index: 8;
+  transform: translateX(20px) translateY(20px);
+}
+.card:nth-of-type(4) {
+  z-index: 7;
+  transform: translateX(30px) translateY(30px);
+}
+.card:nth-of-type(5) {
+  z-index: 6;
+  transform: translateX(40px) translateY(40px);
+}
+.card:nth-of-type(6) {
+  z-index: 5;
+  transform: translateX(50px) translateY(50px);
+}
+.card:nth-of-type(7) {
+  z-index: 4;
+  transform: translateX(60px) translateY(60px);
+}
+.card:nth-of-type(8) {
+  z-index: 3;
+  transform: translateX(70px) translateY(70px);
+}
+.card:nth-of-type(9) {
+  z-index: 2;
+  transform: translateX(80px) translateY(80px);
+}
+.card:nth-of-type(10) {
+  z-index: 1;
+  transform: translateX(90px) translateY(90px);
+}
+.card:nth-of-type(11) {
+  z-index: 0;
+  transform: translateX(100px) translateY(100px);
+}
