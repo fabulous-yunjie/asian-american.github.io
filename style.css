@@ -180,7 +180,7 @@ h6{
     display: flex;
     justify-content: space-between;
     padding-top: 0;
-    padding-bottom: 0;
+    /* padding-bottom: 10vh; */
 }
 
 #hero h1 {
@@ -199,7 +199,7 @@ h6{
     font-weight: bold;
     color: #CA8851;
     width: 30vw;
-    padding-bottom: 10vh;
+   
 }
 
 #hero h1-v:hover {
@@ -220,12 +220,13 @@ h6{
     max-height: 1200px;
 }
 
-/* profile */
+/* demographic pages */
 
-#profile {
+#demopage {
     /* padding-top: 50px; */
-    background-color: #F9E0E6;
     max-height: 1000px;
+    height:110vh;
+    padding-top: 10vh;
 }
 
 /* from Interactive and reusable d3.treemap */
@@ -309,6 +310,7 @@ h6{
 #final {
     background-color: #FFF9EE;
     min-height: 0;
+    height: 90vh;
 }
 
 #vizforfinal {
