@@ -190,7 +190,7 @@ h6{
     font-weight: bold;
     color: #CA8851;
     width: 30vw;
-    padding-bottom: 10vh;
+    /* padding-bottom: 10vh; */
 }
 
 #hero h1-v:hover {
@@ -237,6 +237,15 @@ h6{
 }
 
 /* income inequality */
+.cell text {
+    cursor: move;
+    font: 10px sans-serif;
+    text-anchor: middle;
+}
+    
+.cell rect {  
+    stroke: #fff; 
+}
 
 #income {
     max-height: none;
