@@ -1,31 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Sofia|Lato|Lobster|Poppins|Pacifico|Anton|Kaushan+Script|Roboto|Open+Sans:300,400,600,700");
-body {
-    background: #FBF3E1;
-    font-family: 'Poppins', sans-serif;
-  }
-  #demopage{
-  width: 100vw;
-  height: 100vh;
-  min-height: 700px;
-  overflow: hidden;
-}
 
 .tabs-controls {
-  position: relative;
   z-index: 10;
   display: flex;
   justify-content: center;
   align-items: stretch;
-  width: 100%;
   max-width: 800px;
   margin: 0 auto;
-  box-sizing: border-box;
-  padding: 30px 0 3vh;
+  padding: 30px 0 30px;
   list-style-type: none;
 }
 
 .tabs-controls__link {
-  position: relative;
   display: block;
   padding: 16px 32px;
   font-size: 20px;
@@ -33,11 +19,9 @@ body {
   color: #423E37;
   text-transform: uppercase;
   text-decoration: none;
-  font-family: 'Poppins', Sans-serif;
-  color: e6f9e0;
 }
 .tabs-controls__link:after {
-  position: absolute;
+  position: relative;
   left: 0;
   right: 0;
   bottom: 0;
@@ -82,18 +66,19 @@ body {
 
 }
 .card p{
-  padding-top:5vh;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.3vw;
+  margin: 1.5vh auto;
+  font-size: 2.5vmin;
   font-weight: 400;
   line-height: 1.5;
   color: #423E37;
   text-align: left;
 }
+
 .card-title{
+  margin-top: 2vh;
   font-family: 'Anton', sans-serif;
   font-weight: 400;
-  font-size: 4rem;
+  font-size: 5vmin;
   line-height: 1;
   color: #CA8851;
   transition: background-color 1s;
