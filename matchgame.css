@@ -1,0 +1,235 @@
+/* Add some margin to the page and set a default font and colour */
+@import url("https://fonts.googleapis.com/css?family=Sofia|Lato|Lobster|Poppins|Pacifico|Anton|Kaushan+Script|Roboto|Open+Sans:300,400,600,700");
+:root {
+  --pile-color: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  --pile-bg-color: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  --pile-font-color: #555;
+  --pile-hover-color: #6d6875;
+  --slot-color: #f6fbe1;
+  --slot-bg-color: #f0daa4;
+  --slot-hover-color: #AAA;
+  --slot-font-color: #555;
+  --correct-color: linear-gradient(135deg, #fad961 0%,#f76b1c 100%);
+}
+
+/* #card1.correct {
+  background: var(--correct-color);
+}
+
+#card2.correct {
+  background: var(--correct-color);
+}
+
+#card3.correct {
+  background: var(--correct-color);
+}
+
+#card4.correct {
+  background: var(--correct-color);
+}
+
+#card5.correct {
+  background: var(--correct-color);
+}
+
+#card6.correct {
+  background: var(--correct-color);
+}
+
+#card7.correct {
+  background: var(--correct-color);
+}
+
+#card8.correct {
+  background: var(--correct-color);
+}
+
+#card9.correct {
+  background: var(--correct-color);
+}
+
+#card10.correct {
+  background: var(--correct-color);
+} */
+
+/* Give headings their own font */
+.congratBox {
+  font-size: 1em;
+}
+
+/* Main content area */
+#content {
+  margin: 80px 70px;
+  text-align: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Header/footer boxes */
+.wideBox {
+  clear: both;
+  text-align: center;
+  margin: 50px;
+  border: 1px solid #333;
+}
+
+.wideBox h1 {
+  font-weight: bold;
+  margin: 20px;
+  font-size: 1em;
+}
+
+/* Slots for final card positions */
+
+/* The initial pile of unsorted cards */
+#cardPile {
+  background: none;
+}
+
+#cardSlots{
+  padding: 1em;
+  width: 38vw;
+  height: 30vw;
+  margin-right: 1em;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: 0px;
+  -moz-box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 0.8em rgba(0, 0, 0, 0.8);
+  /* overflow:auto; */
+}
+
+#cardSlots {
+    background: var(--slot-bg-color);
+    position: Center;
+    margin-top: 2vh;
+    margin-left: 25vw;
+    /* padding-top: 40vh; */
+ }
+  
+
+
+ #cardPile {
+     width:80vw;
+     height:20vh;
+     visibility: none;
+ }
+    /* Individual cards and slots */
+#cardSlots div, #cardPile div {
+  position:absolute;
+  box-shadow: 0 0 .2em white;
+  float: Left;
+  /* padding: 2em 1em; */
+  border: 0px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 20px;
+  background: var(--slot-color);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  height: 6vw;
+  width: 8vw;
+  margin: 1vw;
+}
+#cardSlots div{
+    position:relative;
+    font-size: 1.7vh;
+    color: var(--slot-font-color);
+    text-align: center;
+    float: center;
+    left:3vw;
+    padding:3vh 0.3px;
+}
+#cardSlots div.hovered {
+    background: radial-gradient( #cfd9df, #e2ebf0);
+    transform: scaleX(1.2) scaleY(1.2) ;
+    transition: transform 0.8s;
+  }
+
+  
+#cardPile div:hover {
+  transition: transform 0.8s;
+  transform: rotateX(-10deg) rotateY(30deg);
+  opacity: 0.8;
+}
+#cardPile div {
+  background: var(--pile-color);
+  color: var(--pile-font-color);
+
+  padding: 1.2em 0.5em;
+  text-align: Center;
+  /* font-family: 'Lobster', sans-serif; */
+  font-weight: 600;
+  font-size: 1.2em;
+}
+#cardPile div.correct{
+    background: #FFF;
+    transform: rotateX(-20deg) rotateY(15deg) scaleX(1.2) scaleY(1.2);
+
+}
+  #cardPile div.correct:hover{
+    transform: rotateX(-20deg) rotateY(15deg) scaleX(1.25) scaleY(1.25);
+  opacity: 1;
+  }
+
+#cardPile div.ui-draggable-dragging {
+  -moz-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 1em black;
+
+}
+
+#card1{
+    position: absolute;
+    left:10%;
+    padding-top:1vh;
+    margin-top:1vh;
+}
+#card2{
+    left:66%;
+}
+#card3{
+    left:58%;
+}
+#card4{
+    left: 50%;
+}
+#card5{
+    left: 74%;
+}
+#card6{
+    left: 18%;
+}
+
+#card7{
+    left: 26%;
+}
+#card8{
+    left: 42%;
+}
+#card9{
+    left: 34%;
+} */
+/* Individually coloured cards */
+/* "You did it!" message */
+#successMessage {
+  position: absolute;
+  left: 580px;
+  top: 250px;
+  width: 0;
+  height: 0;
+  z-index: 100;
+  background: #dfd;
+  border: 2px solid #333;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: 0.3em 0.3em 0.5em rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0.3em 0.3em 0.5em rgba(0, 0, 0, 0.8);
+  box-shadow: 0.3em 0.3em 0.5em rgba(0, 0, 0, 0.8);
+  padding: 20px;
+}

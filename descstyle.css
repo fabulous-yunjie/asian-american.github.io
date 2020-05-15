@@ -65,14 +65,14 @@ body {
   position: relative;
   z-index: 1;
   width: 60vw;
-  height: 30vh;
+  height: 60vh;
   margin: 0 auto;
 }
 
 .card {
   position: absolute;
   width: 60vw;
-  height: 50vh;
+  height: 60vh;
   background-color: white;
   box-shadow: 9px 11px 3px 0px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
@@ -84,7 +84,7 @@ body {
 .card p{
   padding-top:5vh;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.3vw;
   font-weight: 400;
   line-height: 1.5;
   color: #423E37;

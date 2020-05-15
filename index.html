@@ -32,10 +32,14 @@
     	<link rel="stylesheet" href="./vendor/simpletimeline.css">
 		<script type="text/javascript" src="./vendor/simpletimeline-min.js"></script>
 		<script type="text/javascript" src="desc.js"></script>
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="matchgame.js"></script>
 
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="descstyle.css">
-
+		<link rel="stylesheet" href="matchgame.css">
 	</head>
 
 	<body>
@@ -68,7 +72,7 @@
 			
 			<h2-v>01      Who are they?</h2-v>
 			<div class="row">
-				<div class="col-6">
+				
 					<h4> The migrants from Asia have been in parts of the contemporary United States and now it consists 6.5% of U.S. population. it's a heterogeneous group of people who traced their ancestry to one or more countries in Eastern, Southern and South Eastern Asia. </h4>
 				</div>
 				<!-- <div id = "treemap">
@@ -163,7 +167,7 @@ The Chinese American community is the largest overseas Chinese community outside
 		<div class="card" id="3">
 			<h1 class="card-title">Filipino American</h1>
 			<p>
-				Filipinos in North America were first documented in the 16th century,[20] and other small settlements beginning in the 18th century.[21] Mass migration did not begin until after the end of the Spanish-American War at the end of the 19th Century, when the Philippines was ceded from Spain to the United States in the Treaty of Paris. Filipino sailors were the first Asians in North America in 1587.
+				Filipinos in North America were first documented in the 16th century, and other small settlements beginning in the 18th century.[21] Mass migration did not begin until after the end of the Spanish-American War at the end of the 19th Century, when the Philippines was ceded from Spain to the United States in the Treaty of Paris. Filipino sailors were the first Asians in North America in 1587.
 			</p>
 		</div>
 		<div class="card" id="4">
@@ -210,13 +214,31 @@ The Chinese American community is the largest overseas Chinese community outside
           	<div class="card" id="10">
 			<h1 class="card-title">Other Asian Americans</h1>
 			<p>
-			 The other ethnic groups represented in the census were Thai (237,000), Laotian (232,000), Taiwanese (200,000), Bangladeshi (147,000), and Burmese (100,000).[8] The total population of Asian Americans grew by 46 percent from 2000 to 2010 according to the Census Bureau, which constituted the largest increase of any major racial group during that period.[29] In 2010, there were an estimated 11,284,000 foreign born individuals who were born in Asia, of whom 57.7% had become naturalized citizens.[30] Additionally, 209,128 were Hispanic and Latino, of whom the largest population (101,654) claim Mexico as their nation of origin.
+			 The other ethnic groups represented in the census were Thai (237,000), Laotian (232,000), Taiwanese (200,000), Bangladeshi (147,000), and Burmese (100,000). The total population of Asian Americans grew by 46 percent from 2000 to 2010 according to the Census Bureau, which constituted the largest increase of any major racial group during that period. In 2010, there were an estimated 11,284,000 foreign born individuals who were born in Asia, of whom 57.7% had become naturalized citizens. Additionally, 209,128 were Hispanic and Latino, of whom the largest population (101,654) claim Mexico as their nation of origin.
 			</p>
 		</div>
     
-	</section>
-</section>
+				</section>
+			</section>
 		</section>
+
+
+		<!-- matching game -->
+		<section id="matchgame">
+			<div id="content">
+
+				<div id="cardPile"> </div>
+				<div id="cardSlots"> </div>
+			
+				<div id="successMessage">
+				<h2 class="congratBox">Congratulations! You got it all right! you're knowledgable about Asian Americans!</h2>
+				<div onclick="init()">Play Again</div>
+				</div>
+			
+			</div>
+		</section>
+
+
 
 		<!-- population change and history -->
 		<section id="population" class="container">
@@ -287,11 +309,13 @@ The Chinese American community is the largest overseas Chinese community outside
 		<!-- education gap -->
 		<section id="edu" class="container">
 			<h2-v>05      What's their education level?</h2-v> 
-			
+			<div class='tableauPlaceholder' id='viz1589539125882' style='position: relative; width:40vw;'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;In&#47;IncomeandEduCross-analysis&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='IncomeandEduCross-analysis&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;In&#47;IncomeandEduCross-analysis&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1589539125882');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='700px';vizElement.style.height='627px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='700px';vizElement.style.height='627px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 			<!--<p>Percentage of U.S. Asians with Higher Education</p>
 			<h4>% of those ages 25 and older with a bachelor’s degree or more, by oringin group, 2015</h4>
 			<img src="img/edu.png" alt="" id="vizforedu">-->
 			
+
+			<div class='tableauPlaceholder' id='viz1589540231139' style='position: relative; width:40vw;'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pe&#47;PerCapitaIncome_15895387651520&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='PerCapitaIncome_15895387651520&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pe&#47;PerCapitaIncome_15895387651520&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1589540231139');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1100px';vizElement.style.height='627px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1100px';vizElement.style.height='627px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 		</section>
 
 

@@ -76,7 +76,7 @@ h2 {
 }
 
 h2-v {
-    font-size: 38px;
+    font-size: 4vh;
     color: #CA8851;
     font-weight: bold;
     display: block;
@@ -86,15 +86,17 @@ h2-v {
 }
 
 h4 {
-    font-size: 16px;
+    font-size: 2vh;
     color: #333333;
     font-weight: lighter;
-    width: 100%;
+    width: 50%;
     /* max-width: 1092px; */
     padding-top: 3px;
     padding-bottom: 3px;
+    margin: auto;
+    line-height:3.5vh;
     /* transform: translate(-10%, 100%); */
-    text-align: center;
+    text-align: left;
     justify-content: center;
 }
 
@@ -229,6 +231,13 @@ h6{
     padding-top: 10vh;
 }
 
+#matchgame {
+    background: #FBF3E1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+
+    height:90vh;
+  }
 /* from Interactive and reusable d3.treemap */
 /* http://bl.ocks.org/annaghi/5d24b37ebe077d4e919f */
 
@@ -434,7 +443,11 @@ text.s-title {
   color: white;
 }
 
-
+.tableauPlaceholder{
+    position:absolute;
+    margin: auto;
+    width: 50%;
+}
 
 /* @media (min-width: 1200px){
     .container {
