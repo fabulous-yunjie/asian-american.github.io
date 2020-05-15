@@ -1,2 +1,2 @@
 # asian-american.github.io
-Author: Yunjie Yao
+Author: Ryan Liu, Yankai Huang, Yunjie Yao
