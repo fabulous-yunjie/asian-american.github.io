@@ -212,12 +212,12 @@ h6{
     font-weight: bold;
     color: #CA8851;
     width: 30vw;
-    /* padding-bottom: 10vh; */
 }
 
 #hero h1-v:hover {
-    background-color: #CA8851;
+    background: linear-gradient(90deg, rgb(212, 155, 108) 0%, #CA8851 50%);
     color: #FFFFFF;
+    transition: color 1s;
 }
 
 #hero>img {
@@ -232,7 +232,7 @@ h6{
     background-color: #F9E7E6;
     max-height: 1200px;
     position:relative;
-    height:100vh;
+    height:110vh;
 }
 
 #whodesc {
@@ -260,7 +260,7 @@ h6{
     background: #FBF5EE;
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
-    height:100vh;
+    height:110vh;
   }
 
 

@@ -8,7 +8,7 @@ $(document).ready(function() {
 			return false;
 		}
 
-		var currentId = parseInt($(this).data('id'), 10);
+		var currentId = parseInt($(this).data('id'));
 		$('.tabs-controls__link--active').removeClass('tabs-controls__link--active');
 		$(this).addClass('tabs-controls__link--active');
 

@@ -10,7 +10,7 @@
   --slot-hover-color: #AAA;
   --slot-font-color: #555;
   --correct-color: linear-gradient(135deg, #fad961 0%,#f76b1c 100%);
-  --card-margin: 0%;
+  --card-margin: 5%;
 }
 
 /* Give headings their own font */
@@ -23,6 +23,7 @@
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
+  position:relative;
 }
 
 /* Slots for final card positions */
@@ -35,7 +36,7 @@
   /* float: right; */
   width: 36%;
   height: 50vh;
-  margin-top: 3vh;
+  /* margin-top: 3vh; */
   margin-left: 33vw;
   /* padding-left: 40vw; */
 
@@ -64,7 +65,7 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
   text-align: center;
-  height: 6vw;
+  height: 12vh;
   width: 8vw;
   margin: 1vw;
 }
@@ -75,7 +76,7 @@
     text-align: center;
     float: center;
     left:3vw;
-    padding:3vh 0.3px;
+    padding:1.5vh 0.3px;
 }
 #cardSlots div.hovered {
     background: radial-gradient( #cfd9df, #e2ebf0);
@@ -98,7 +99,7 @@
   /* font-family: 'Lobster', sans-serif; */
   font-weight: 600;
   font-size: 1.2em;
-  margin-left:5.5vw;
+  /* margin-left:5.5vw; */
 }
 #cardPile div.correct{
     background: #FFF;
@@ -120,42 +121,43 @@ opacity: 1;
 
 #card1{
     position: absolute;
-    left: calc(var(--card-margin)+10%);
+    left: calc(var(--card-margin)+14%);
     padding-top:1vh;
     margin-top:1vh;
     
 }
 #card2{
-    left: calc(var(--card-margin)+66%);
+    left: calc( var(--card-margin)+70% );
 }
 #card3{
-    left: calc(var(--card-margin)+58%);
+    left: calc(var(--card-margin)+62%);
 }
 #card4{
-    left: calc(var(--card-margin)+50%);
+    left: calc(var(--card-margin)+54%);
 }
 #card5{
-    left: calc(var(--card-margin)+74%);
+    left: calc(var(--card-margin)+78%);
 }
 #card6{
-    left: calc(var(--card-margin)+18%);
+    left: calc(var(--card-margin)+22%);
 }
 
 #card7{
-    left: calc(var(--card-margin)+26%);
+    left: calc(var(--card-margin)+30%);
 }
 #card8{
-    left: calc(var(--card-margin)+42%);
+    left: calc(var(--card-margin)+46%);
 }
 #card9{
-    left: calc(var(--card-margin)+34%);
+    left: calc(var(--card-margin)+38%);
 } 
 /* Individually coloured cards */
 /* "You did it!" message */
 #successMessage {
-  position: relative;
+  position: absolute;
   width: 50%;
-  height: 0;
+  margin-left: 35vw;
+  margin-top:40vh;
   z-index: 100;
   background: #dfd;
   border: 2px solid #333;

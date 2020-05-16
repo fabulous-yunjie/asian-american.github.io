@@ -56,7 +56,7 @@
 .card {
   position: absolute;
   width: 60vw;
-  height: 60vh;
+  height: 55vh;
   background-color: white;
   box-shadow: 9px 11px 3px 0px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
@@ -98,6 +98,7 @@
   color: #336795;
   transition: color 0.5s;
 }
+
 .card.hidden:nth-of-type(1) {
   transform: rotate(-53deg) translateX(101%) translateY(-2%) scale(0.6) skewX(8deg) skewY(7deg);
 }
@@ -131,6 +132,9 @@
 .card.hidden:nth-of-type(11) {
   transform: rotate(-72deg) translateX(101%) translateY(-54%) scale(0.3) skewX(10deg) skewY(8deg);
 }
+
+
+
 .card:nth-of-type(1) {
   z-index: 10;
   transform: translateX(0px) translateY(0px);

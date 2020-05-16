@@ -7,8 +7,6 @@ $(document).ready(function() {
         // Hide the success message
         $('#successMessage').hide();
         $('#successMessage').css( {
-          left: '580px',
-          top: '250px',
           width: 0,
           height: 0
         } );
@@ -87,11 +85,9 @@ $(document).ready(function() {
         if ( correctCards == 9 ) {
           $('#successMessage').show();
           $('#successMessage').animate( {
-            left: '380px',
-            top: '200px',
-            width: '400px',
-            height: '100px',
-            opacity: 1
+            width: '40vw',
+            height: '35vh',
+            opacity: 0.8
           } );
         }
         
