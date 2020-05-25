@@ -8,7 +8,7 @@ div .disabled {
     /* horizontal */
     overflow-x: hidden; 
     /* vertical */
-    overflow-y: scroll; 
+    overflow-y: scroll;
 }
 
 .flourish-credit{
@@ -109,11 +109,6 @@ h4 {
     padding-top: 3px;
     padding-bottom: 3px;
     line-height: 3.5vh;
-    display: block;
-    text-align: center;
-        position: center;
-    align-content: center;
-    justify-content: center;
 }
 
 .pageh4 {
@@ -138,7 +133,6 @@ h5 {
     padding-bottom: 5px;
     /* max-width: 1000px; */
     text-align: center;
-    position: center;
     align-content: center;
 }
 
@@ -293,10 +287,6 @@ h6{
     background-color: #FBF3E1;
 }
 
-#vizforlocation {
-    margin: 0 auto;
-}
-
 /* income inequality */
 
 #income {
@@ -314,9 +304,9 @@ h6{
 }
 
 #vizforincome {
-    margin: 0 15px;
+    display: block;
+    margin: 15px auto 0;
     max-width: 1200px;
-
 }
 
 /* education gap */
@@ -350,8 +340,8 @@ h6{
     min-height: 0;
 }
 
-#final>h4{
-    margin-left: 5vw
+#final h4{
+    margin: 0 auto
 }
 
 #vizforfinal {
