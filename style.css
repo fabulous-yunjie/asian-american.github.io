@@ -316,7 +316,8 @@ h6{
 #vizforincome {
     display: block;
     margin: 0 auto;
-    max-width: 1800px;
+    max-width: 1400px;
+    max-height: 1200px;
 }
 
 /* education gap */
