@@ -47,7 +47,7 @@ p {
     color: #777;
     font-size: 16px;
     font-weight: 400px;
-    max-width: 1000px;
+    max-width: 750px;
     padding-bottom: 5px;
     line-height: 28px;
     margin-left: auto;
@@ -106,13 +106,13 @@ h4 {
     color: #333333;
     font-weight: lighter;
     /* width: 50%; */
-    /* max-width: 1092px; */
+    max-width: 650px; 
     padding-top: 3px;
     padding-bottom: 3px;
-    margin: auto;
+    margin: auto, auto;
     line-height:3.5vh;
-    /* transform: translate(-10%, 100%); */
-    text-align: left;
+    display: block;
+    text-align: center;
     justify-content: center;
 }
 
@@ -314,10 +314,9 @@ h6{
 }
 
 #vizforincome {
-    display: block;
-    margin: 0 auto;
-    max-width: 1400px;
-    max-height: 1200px;
+    margin: 0 15px;
+    max-width: 1200px;
+
 }
 
 /* education gap */
@@ -356,8 +355,10 @@ h6{
 }
 
 #vizforfinal {
-    width: 100%;
     display: block;
+    max-width: 600px;
+    margin: auto auto 0;
+    
 }
 
 /* footer */
