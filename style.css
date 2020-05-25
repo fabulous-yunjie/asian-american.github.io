@@ -47,7 +47,7 @@ p {
     color: #777;
     font-size: 16px;
     font-weight: 400px;
-    max-width: 1000px;
+    max-width: 750px;
     padding-bottom: 5px;
     line-height: 28px;
     margin-left: auto;
@@ -88,7 +88,7 @@ h2 {
     margin-right: -50%;
     transform: translate(-50%, -50%);
     padding-top: 225px;
-    padding-bottom: 35px;
+    padding-bottom: 20px;
 }
 
 h2-v {
@@ -98,21 +98,21 @@ h2-v {
     display: block;
     text-align: center;
     justify-content: center;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
 }
 
 h4 {
     font-size: 2vh;
     color: #333333;
-    font-weight: lighter;
     /* width: 50%; */
-    /* max-width: 1092px; */
+    max-width: 650px; 
     padding-top: 3px;
     padding-bottom: 3px;
-    margin: auto;
-    line-height:3.5vh;
-    /* transform: translate(-10%, 100%); */
-    text-align: left;
+    line-height: 3.5vh;
+    display: block;
+    text-align: center;
+        position: center;
+    align-content: center;
     justify-content: center;
 }
 
@@ -310,9 +310,9 @@ h6{
 }
 
 #vizforincome {
-    display: block;
-    margin: 0 auto;
-    max-width: 1000px;
+    margin: 0 15px;
+    max-width: 1200px;
+
 }
 
 /* education gap */
@@ -351,9 +351,10 @@ h6{
 }
 
 #vizforfinal {
-    width: 40%;
     display: block;
-    margin: 15px auto 0;
+    max-width: 600px;
+    margin: auto auto 0;
+    
 }
 
 /* footer */
