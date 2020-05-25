@@ -104,15 +104,15 @@ h2-v {
 h4 {
     font-size: 2vh;
     color: #333333;
-    font-weight: lighter;
     /* width: 50%; */
     max-width: 650px; 
     padding-top: 3px;
     padding-bottom: 3px;
-    margin: auto, auto;
-    line-height:3.5vh;
+    line-height: 3.5vh;
     display: block;
     text-align: center;
+        position: center;
+    align-content: center;
     justify-content: center;
 }
 
